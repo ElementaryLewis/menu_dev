@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* ---------------------------- */
+/* ----- GENERAL SETTINGS ----- */
+/* ---------------------------- */
+
+#headerNavContainer div {
+	z-index: 800;
+}
+
+#headerNavContainer ul {
+	z-index: 800;
+}
+
+#headerNavContainer,
+#logoContainer,
+#logoContainer button,
+#item-h-nav-container,
+.itemNav,
+.itemNav button,
+#mask {
+	min-height: 70px;
+	max-height: 80px;
+}
+
+.itemNav {
+	background-color: #313131b7;
+}
+
+.itemNav i,
+.itemNav h6 {
+	font-size: 95%;
+}
+
+#logoContainer div {
+	height: 55px;
+	width: 55px;
+}
+
+#logoContainer img {
+	width: 40px;
+}
+
+#item-h-nav-container {
+	padding: 0;
+	margin: 0;
+}
+
+#logoContainer button,
+.itemNav button {
+	border-radius: 0;
+	border: none;
+}
+
+#headerNavContainer button {
+	/* background:
+		linear-gradient(#DD7B10 50%, #fff 0) 0 var(--_d, 0) /100% 200% no-repeat,
+		linear-gradient(#0000 50%, #DD7B10 0) 0 var(--_d, 0) /100% 200% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box; */
+	background-color: #313131;
+	transition: 450ms;
+}
+
+#headerNavContainer button:hover {
+	/* --_d: 100%; */
+	background-color: #DD7B10;
+}
+
+#headerNavContainer button,
+#hamburgerMenu-btn i {
+	cursor: pointer;
+}
+
+#hamburgerMenu-btn {
+	display: none;
+}
+
+/* ---------------------------- */
+/* ----- HEADER NAVIGATION FOR ADMIN ----- */
+/* ---------------------------- */
+
+#adminItems {
+	transform: translateY(-300px);
+	opacity: 0;
+	z-index: 1000;
+}
+
+#adminItems.toggleAdminClass {
+	transform: translateY(0px);
+	opacity: 1;
+
+}
+
+.mobileOnly {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+	/* ---------------------------- */
+	/* ----- GENERAL SETTINGS ----- */
+	/* ---------------------------- */
+
+	#logoContainer {
+		width: 70px;
+	}
+
+	#headerNavContainer button {
+		background: #313131;
+	}
+
+	#item-h-nav-container {
+		display: block;
+		height: auto;
+		position: absolute;
+		top: -280px;
+		left: 0px;
+		z-index: 700;
+	}
+
+	#item-h-nav-container.toggleMenu {
+		top: 70px;
+	}
+
+	.itemNav,
+	.itemNav button {
+		min-height: 34px;
+		max-height: 40px;
+	}
+
+	.itemNav button {
+		padding: 1em 0;
+	}
+
+	.itemNav i,
+	.itemNav h6 {
+		font-size: 90%;
+	}
+
+	#item-h-nav-container > :last-child {
+		border-bottom: 8px solid #313131;
+	}
+
+	#hamburgerMenu-btn {
+		display: block;
+		top: 25px;
+		right: 25px;
+	}
+
+	#hamburgerMenu-btn i {
+		font-size: 170%;
+	}
+
+	/* ---------------------------- */
+	/* ----- HEADER NAVIGATION FOR ADMIN ----- */
+	/* ---------------------------- */
+
+	#adminItems {
+		display: none;
+	}
+
+	.mobileOnly {
+		display: block;
+	}
+
+	.deckstopOnly {
+		display: none;
+	}
+
+}

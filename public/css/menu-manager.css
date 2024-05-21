@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/* --- SEARCH MENU FORM SETTINGS --- */
+
+
+
+/* --- MENU FORM SETTINGS --- */
+
+#entree,
+#plat,
+#accompagnement,
+#fromage,
+#dessert,
+#fruit {
+	background-color: rgba(240, 255, 255, 0.76);
+}
+
+#chooseDate {
+	padding-right: 2em;
+}
+
+#chooseDate input,
+#chooseTime select,
+.textMenu {
+	border-radius: 20px;
+	padding: 1em;
+	border: none;
+	font-family: "Sofia Sans", sans-serif;
+}
+
+#chooseDate input {
+	width: 190px;
+}
+
+#chooseTime select {
+	width: 90%;
+	min-width: 190px;
+}
+
+#fruitTitle,
+#dessertTitle,
+#fromageTitle,
+#accompagnementTitle,
+#platTitle,
+#entreeTitle {
+	margin-top: -1.7em;
+}
+
+#fruitTitle div,
+#dessertTitle div,
+#fromageTitle div,
+#accompagnementTitle div,
+#platTitle div,
+#entreeTitle div {
+	width: 90px;
+	height: 90px;
+}
+
+#fruitTitle img,
+#dessertTitle img,
+#fromageTitle img,
+#accompagnementTitle img,
+#platTitle img,
+#entreeTitle img {
+	display: inline;
+	max-width: 4em;
+	min-width: 2em;
+}
+
+.textMenu {
+	min-height: 2em;
+}
+
+.checkboxAB,
+.checkboxHandMade,
+.checkboxEurope,
+.checkboxAB::after,
+.checkboxHandMade::after,
+.checkboxEurope::after {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.checkboxHandMade {
+	transform: translateX(2.3em);
+}
+
+.checkboxEurope {
+	transform: translateX(4.3em);
+}
+
+/* .checkboxAB::after,
+.checkboxHandMade::after,
+.checkboxEurope::after {
+	margin-left: 2em;
+} */
+
+.checkboxAB::after {
+	content: url(../img/svg/Fichier\ 1.svg);
+}
+
+.checkboxHandMade::after {
+	content: url(../img/svg/Fichier\ 4.svg);
+}
+
+.checkboxEurope::after {
+	content: url(../img/svg/Fichier\ 2.svg);
+}
+
+.menuManager {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(240, 248, 255, 0.68);
+	border-top: 2px solid #ffffffe6;
+}
+
+.pageMenuManager {
+	padding-bottom: 5em;
+}
+
+#menuButton1,
+#menuButton2,
+#menuButton3 {
+	min-height: 200px;
+	background-image: url(../img/luisa-brimble-2RrBE90w0T8-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.toSeeMobileMenu {
+	display: none;
+}
+
+#menuContainer,
+#menuContainerEditMode {
+	height: 100%;
+}
+
+#menuContainerEditMode {
+	padding-bottom: 8em;
+	margin-top: 2em;
+}
+
+.specialDate {
+	min-height: 4em;
+	min-width: 4em;
+	max-width: 5em;
+	margin: 0 2em;
+	background-image: url(../img/halloween.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.imageMeal {
+	width: 3.5em;
+	height: 3.5em;
+	margin-right: 1em;
+	background-color: #1e2f5ebc;
+	border-radius: 100px;
+	transform: translateY(-1em);
+}
+
+.imageMeal img {
+	width: 1.7em;
+	height: 1.7em;
+}
+
+.sep {
+	border-top: dashed 0.2em #ffffff98;
+}
+
+.labelMeal {
+	background-color: aliceblue;
+	border: solid 0.1em aliceblue;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bioAgri {
+	background-image: url(../img/svg/Fichier\ 1.svg);
+}
+
+.HandMade {
+	background-image: url(../img/svg/Fichier\ 4.svg);
+}
+
+.Europe {
+	background-image: url(../img/svg/Fichier\ 2.svg);
+}
+
+.hide {
+	display: none;
+	font-size: 0%;
+	height: 0px;
+	width: 0px;
+	opacity: 0;
+}
+
+.display {
+	display: block !important;
+	font-size: 100%;
+	width: 1.5em;
+	height: 1.5em;
+	opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+	#chooseDate {
+		padding-right: 0;
+	}
+
+	.pageMenuManager {
+		padding-bottom: 9.7em;
+	}
+
+	.toSeeDeckstopMenu {
+		display: none;
+	}
+
+	.toSeeMobileMenu {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.checkboxAB,
+	.checkboxHandMade,
+	.checkboxEurope,
+	.checkboxAB::after,
+	.checkboxHandMade::after,
+	.checkboxEurope::after {
+		width: 1.2em;
+		height: 1.2em;
+	}
+
+	/* .checkboxAB::after,
+	.checkboxHandMade::after,
+	.checkboxEurope::after {
+		margin-left: 1.5em;
+	} */
+
+	.checkboxHandMade {
+		transform: translateX(1.3em);
+	}
+
+	.checkboxEurope {
+		transform: translateX(2.3em);
+	}
+
+	#closePopUp {
+		transform: translateY(0.5em);
+	}
+
+	#popUpMessage {
+		padding: 0.7em 0.2em 0.7em 0.2em;
+	}
+
+	#chooseDate,
+	#chooseTime {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#chooseDate label,
+	#chooseTime label {
+		margin: 0 0 0.5em 0;
+	}
+
+}

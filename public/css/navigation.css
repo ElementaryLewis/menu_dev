@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#headApp {
+	min-height: 4.5em;
+}
+
+#logo {
+	width: 3em;
+	height: 3em;
+	border-radius: 100px;
+	border: solid 3px #fff;
+	background-image: url(../img/palmes-blanches-fond-transparent-hd-min.png);
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#burgerMenuContainer {
+	display: none;
+}
+
+#burgerMenu,
+#burgerMenu::before {
+	width: 0px;
+	height: 0px;
+}
+
+#burgerMenu::before {
+	content: '\2630';
+	display: block;
+	margin: 0;
+}
+
+.navApp {
+	/* background:
+		linear-gradient(#DD7B10 50%, #fff 0) 0 var(--_d, 0) /100% 200% no-repeat,
+		linear-gradient(#0000 50%, #DD7B10 0) 0 var(--_d, 0) /100% 200% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box; */
+	background-color: #313131;
+	transition: 450ms;
+}
+
+.navFooter {
+	/* background:
+		linear-gradient(#444444 50%, #fff 0) 0 var(--_d, 0) /100% 200% no-repeat,
+		linear-gradient(#0000 50%, #444444 0) 0 var(--_d, 0) /100% 200% no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box; */
+	transition: 450ms;
+}
+
+.navApp:hover {
+	/* --_d: 100%; */
+	background-color: #DD7B10;
+}
+
+.navFooter:hover {
+	/* --_d: 100%; */
+	background-color: #515151;
+}
+
+.gridFooterApp {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(1, minmax(4.5em, 1fr));
+}
+
+#footerApp,
+.gridFooterApp {
+	height: 4em;
+}
+
+@media screen and (max-width: 768px) {
+
+	#headApp,
+	#burgerMenuContainer {
+		height: 4em;
+	}
+
+	#burgerMenuContainer {
+		display: block;
+		top: 0;
+		right: 0;
+		z-index: 400;
+	}
+
+	#footerApp,
+	.gridFooterApp {
+		height: 100%;
+	}
+
+	.gridFooterApp {
+		grid-template-rows: repeat(5, minmax(2.5em, 1fr));
+	}
+
+}

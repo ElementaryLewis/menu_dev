@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* ---------------------------- */
+/* ----- GENERAL SETTINGS ----- */
+/* ---------------------------- */
+
+#footerNavContainer,
+#footerNavContainer div,
+#footerNavContainer a {
+	min-height: 70px;
+	max-height: 80px;
+}
+
+
+.navFooter {
+	/* background:
+        linear-gradient(#4a4a4a 50%, #fff 0) 0 var(--_d, 0) /100% 200% no-repeat,
+        linear-gradient(#0000 50%, #4a4a4a 0) 0 var(--_d, 0) /100% 200% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box; */
+	transition: 450ms;
+}
+
+.navFooter:hover {
+	--_d: 100%;
+	background-color: #4a4a4a;
+}
+
+#footerNavContainer a {
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	/* ---------------------------- */
+	/* ----- GENERAL SETTINGS ----- */
+	/* ---------------------------- */
+
+	#footerNavContainer {
+		display: block;
+		height: auto;
+	}
+
+	#headerNavContainer a {
+		background: #313131;
+	}
+
+	#footerNavContainer div,
+	#footerNavContainer a {
+		min-height: 40px;
+		max-height: 50px;
+	}
+
+}
