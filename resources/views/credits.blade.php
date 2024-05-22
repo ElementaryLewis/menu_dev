@@ -81,7 +81,7 @@ $formattedDate = $formatter->format($date);
 									<h6>Via Formation</h6>
 								</a>, centre de formation d'Alençon.
 								<br>
-								Le code source est disponible sur <a href="https://github.com/ElementaryLewis">
+								Le code source est disponible sur <a href="https://github.com/ElementaryLewis/menu_dev">
 									<h6>GitHub</h6>
 							</h6>
 						</div>
