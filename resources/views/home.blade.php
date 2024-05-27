@@ -39,7 +39,9 @@ if (session('dontexist')) {
 			<div class="grid XXLgridRow12 SgridRow12 XXLw-100 bgIce XXLflexboxChild-1">
 				<div class="XXLspan-12 XXLsLine2 XXLeLine4 bgIce">
 					<div id="messages" class="XXLflex XXLflexCenteredXY XXLh-100">
-						<h3 class="XXLcenter XXLflexCenteredXY XXLmAuto XXLh-100">{{ $formattedDate }}</h3>
+						<h3 class="XXLcenter XXLflexCenteredXY XXLmAuto XXLh-100">
+							{{ $formattedDate }}
+						</h3>
 					</div>
 				</div>
 				<div id="bodyApp" class="XXLspan-12 XXLsLine4 XXLeLine12 bgIce">
