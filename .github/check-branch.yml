@@ -1,0 +1,17 @@
+name: Check branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check branch
+        if: github.head_ref != 'develop'
+        run: |
+          echo "ERROR: Only develop branch can be merge with main branch"
+          exit 1
