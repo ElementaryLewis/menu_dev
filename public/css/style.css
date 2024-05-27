@@ -1467,7 +1467,7 @@ h6 {
 
 .XXLflexbox {
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 .XXLflexboxChild-1 {

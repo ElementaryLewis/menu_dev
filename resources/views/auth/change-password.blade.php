@@ -8,7 +8,7 @@
 
 <body>
 	<div id="mainContainer">
-		<div class="grid XXLgridRow12 XXLfixed XXLh-100 XXLw-100 bgIce scrollbarVerti">
+		<div class="grid XXLgridRow12 XXLfixed XXLh-100 XXLw-100 bgIce">
 			<x-header-layout> </x-header-layout>
 			<div class="min-h-full justify-center py-12 sm:px-6 lg:px-8">
 				<h4 class="block pl03. center">

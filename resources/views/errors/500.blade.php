@@ -44,7 +44,9 @@ $formattedDate = $formatter->format($date);
 								Oups !<br>Il semble qu'il y ait eu une erreur !
 							</h3>
 							<h6 class="XXLcenter">
-								Nous n'arrivons pas à trouver la page que vous cherchez.<br>Vérifiez si l'URL est correcte
+								Un problème est survenu lors de la requête auprès du serveur.<br>
+								Veuillez vous connecter en tant qu'administrateur.trice<br>
+								ou vous rapprochez-vous du service informatique pour en savoir plus.
 							</h6>
 						</div>
 					</div>

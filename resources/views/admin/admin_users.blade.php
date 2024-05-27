@@ -139,7 +139,7 @@ $formattedDate = $formatter->format($date);
 									</form>
 									<!-- DELETE : USER CARD-->
 									@if (!$userOption->isAdmin())
-										<div class="smallBtnUserCard">
+										<div class="smallBtnBin smallBtnUserCard">
 											<button type="button" class="cursorP darkGrey XXLbr50 XXLflexCenteredXY" onclick="togglePupUp20()">
 												<i class="fa-solid fa-trash-can fcWhite"></i>
 											</button>

@@ -35,7 +35,7 @@ $formattedDate = $formatter->format($date);
 			<x-header-layout>
 			</x-header-layout>
 		</div>
-		<div class="grid XXLgridRow12 XXLh-100vh XXLw-100 bgIce scrollbarVerti">
+		<div class="grid XXLgridRow12 XXLh-100vh XXLw-100 bgIce">
 			<div class="XXLspan-12 XXLsLine2 XXLeLine4 bgIce">
 				<div id="messages" class="XXLflex XXLflexCenteredXY XXLh-100">
 					<h3 class="XXLcenter XXLflexCenteredXY XXLmAuto XXLh-100">Editer mon profile</h3>

@@ -6,7 +6,6 @@ use App\Http\Requests\MenuRequest;
 use App\Models\Menu;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;

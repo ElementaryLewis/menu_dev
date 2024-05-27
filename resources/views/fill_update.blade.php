@@ -135,7 +135,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE ENTREE -->
 							<span id="entreeTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/salade.svg') }}" alt="entree">
+									<img src="{{ asset('img/svg/salade.svg') }}" alt="Icône de l'entrée">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE ENTREE -->
@@ -227,7 +227,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE PLAT -->
 							<span id="platTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/plat.svg') }}" alt="plat">
+									<img src="{{ asset('img/svg/plat.svg') }}" alt="Icône du plat">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE PLAT -->
@@ -319,7 +319,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE ACCOMPAGNEMENT -->
 							<span id="accompagnementTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/accompagnement.svg') }}" alt="accompagnement">
+									<img src="{{ asset('img/svg/accompagnement.svg') }}" alt="Icône de l'accompagnement">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE ACCOMPAGNEMENT -->
@@ -392,7 +392,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE FROMAGE -->
 							<span id="fromageTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/fromage.svg') }}" alt="fromage">
+									<img src="{{ asset('img/svg/fromage.svg') }}" alt="Icône du fromage">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE FROMAGE -->
@@ -484,7 +484,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE DESSERT -->
 							<span id="dessertTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/dessert.svg') }}" alt="dessert">
+									<img src="{{ asset('img/svg/dessert.svg') }}" alt="Icône du dessert">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE DESSERT -->
@@ -588,7 +588,7 @@ $formattedDate = $formatter->format($date);
 							<!-- BEGINNING : IMAGE TITLE FRUIT -->
 							<span id="fruitTitle" class="XXLmAuto XXLw-100 XXLflexCenteredXY">
 								<div class="bgGlobalCheval XXLbr50 XXLflexCenteredXY">
-									<img src="{{ asset('img/svg/fruit.svg') }}" alt="fruit">
+									<img src="{{ asset('img/svg/fruit.svg') }}" alt="Icône du fruit">
 								</div>
 							</span>
 							<!-- END : IMAGE TITLE FRUIT -->

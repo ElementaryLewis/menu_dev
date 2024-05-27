@@ -109,7 +109,7 @@ $formattedDate = $formatter->format($date);
 			@if (session('errors'))
 				<div id="errorMessageContainer" class="XXLflexCenteredXY XXLsCol2 XXLeCol12 XXLsLine11 XXLeLine13 bgIce">
 					<p class="XXLbr20 borderBox fcAgricultureElevage XXLcenter p1 XXLmAuto bgWhite error-messages XXLflexCenteredXY">
-						Les identifiants saisient sont incorrectes
+						Les identifiants saisies sont incorrectes
 					</p>
 				</div>
 			@endif

@@ -21,10 +21,6 @@ $formatter = new IntlDateFormatter(
     'dd MMMM yyyy',
 ); // Custom pattern)
 
-/*	echo 'DB_DATABASE: ' . getenv('DB_DATABASE') . PHP_EOL;
- * echo 'DB_USERNAME: ' . getenv('DB_USERNAME') . PHP_EOL;
- * echo 'DB_PASSWORD: ' . getenv('DB_PASSWORD') . PHP_EOL; */
-
 // Format the date
 $formattedDate = $formatter->format($date);
 if (session('dontexist')) {

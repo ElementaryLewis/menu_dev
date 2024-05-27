@@ -56,7 +56,7 @@ $formattedDate = $formatter->format($date);
 		<div id="entreeViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/salade.svg') }}" alt="Entrée" />
+					<img class="fcWhite borderBox" src="{{ asset('img/svg/salade.svg') }}" alt="Icône de l'Entrée" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Entrée
@@ -108,7 +108,7 @@ $formattedDate = $formatter->format($date);
 		<div id="platViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/plat.svg') }}" alt="Plat" />
+					<img class="fcWhite borderBox" src="{{ asset('img/svg/plat.svg') }}" alt="Icône du Plat" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Plat
@@ -157,7 +157,7 @@ $formattedDate = $formatter->format($date);
 		<div id="accompagnementViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/accompagnement.svg') }}" alt="Accompagnement" />
+					<img class="fcWhite borderBox" src="{{ asset('img/svg/accompagnement.svg') }}" alt="Icône de l'Accompagnement" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Accompagnement
@@ -197,7 +197,7 @@ $formattedDate = $formatter->format($date);
 		<div id="fromageViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/fromage.svg') }}" alt="Fromage" />
+					<img class="fcWhite borderBox" src="{{ asset('img/svg/fromage.svg') }}" alt="Icône du Fromage" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Fromage
@@ -246,7 +246,7 @@ $formattedDate = $formatter->format($date);
 		<div id="dessertViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/dessert.svg') }}" alt="Dessert" />
+					<img class="fcWhiteborderBox" src="{{ asset('img/svg/dessert.svg') }}" alt="Icône du Dessert" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Dessert
@@ -307,7 +307,7 @@ $formattedDate = $formatter->format($date);
 		<div id="fruitViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 			<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 				<div class="imageMeal XXLflexCenteredXY">
-					<img class="borderBox" src="{{ asset('img/svg/fruit.svg') }}" alt="Fruit" />
+					<img class="fcWhite borderBox" src="{{ asset('img/svg/fruit.svg') }}" alt="Icône du Fruit" />
 				</div>
 				<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 					Fruit

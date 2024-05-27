@@ -5,20 +5,13 @@ use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\HomeController;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Mail;
-
-// Route::get('/send-test-email', function () {
-// 	Mail::to('lewis.p.m@free.fr')->send(new ResetPasswordMail('test-token'));
-// 	return 'Test email sent!';
-// });
 
 require __DIR__ . '/auth.php';
 
 Route::get('/credits', [MenuController::class, 'credits'])->name('credits');
 Route::get('/contacts', [MenuController::class, 'contacts'])->name('contacts');
 
-//Route::get('/', [MenuController::class, 'index'])->middleware('guest')->name('index');
-Route::get(RouteServiceProvider::HOME, [HomeController::class, 'index'])->middleware('auth')->name('index');
+Route::get(RouteServiceProvider::HOME, [HomeController::class, 'home'])->middleware('auth')->name('index');
 Route::get('/cree_date', [MenuController::class, 'choose_create'])->middleware('auth')->name('cree_date');
 Route::post('/cree_date/menu', [MenuController::class, 'fill_create'])->middleware('auth')->name('cree_menu');
 Route::get('/cree_date/menu', [MenuController::class, 'fill_create'])->middleware('auth');

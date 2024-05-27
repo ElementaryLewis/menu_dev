@@ -43,8 +43,8 @@ $formattedDate = $formatter->format($date);
 				</div>
 			</div>
 			<!-- END : TILTE PAGE -->
-			<div class="grid XXLw-100 pt2 pb2 bgIce XXLflexboxChild-1">
-				<div class="XXLsCol2 XXLeCol12 grid contactPage">
+			<div class="grid XXLw-100 pt2 pb3 bgIce">
+				<div class="XXLsCol2 XXLeCol12 grid">
 					<!--BEGINNING : USER CONTACT-->
 					<div class="XXLspan-3 Lspan-4 Mspan-6 Sspan-12 XXLbr20 userCard mt1 mr1 mb2 ml1 ">
 						<div class="XXLflexCenteredXY">
@@ -79,7 +79,7 @@ $formattedDate = $formatter->format($date);
 								<h6 class="XXLmAuto pb05">Sahuc</h6>
 								<p class="XXLmAuto XXLw-90 XXLcenter pt05 pb05 bgLightGrey XXLbr50 fcDarkGrey mb1">
 									Administrateur<br>
-									Chargé de communication du Campus Terre & Avenir 2023 - 2024
+									Chargé de communication du Campus Terre & Avenir (2023 - 2024)
 								</p>
 							</div>
 						</div>
@@ -107,8 +107,7 @@ $formattedDate = $formatter->format($date);
 						</div>
 						<div class="bottomUserCard pt1 pb1 XXLbrBottom20">
 							<div class="XXLflexVerticalAlign">
-								<p class="XXLmAuto pb1">06 95 45 47 29</p>
-								<p class="XXLmAuto pb1">lewis.p.m@outlook.com</p>
+								<img class="XXLmAuto pb1" src=" {{ asset('img\png\contact\contact1.png') }}">
 							</div>
 						</div>
 					</div>

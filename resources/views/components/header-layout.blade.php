@@ -2,7 +2,8 @@
 	<div id="logoContainer" class="XXLw-10">
 		<button type="button" class="XXLw-100 XXLflexCenteredXY" onclick="window.location.href='{{ route('index') }}';">
 			<div class="p1 XXLbr50 borderBox XXLBordWhite XXLflexCenteredXY XXLabsolute">
-				<img src="{{ asset('img/palmes-blanches-fond-transparent-hd-min.png') }}" alt="" />
+				<img class="fcWhite" src="{{ asset('img/palmes-blanches-fond-transparent-hd-min.png') }}"
+					alt="Logo. Lien vers la page d'accueil" />
 			</div>
 		</button>
 	</div>

@@ -350,11 +350,11 @@ $formattedDate = $formatter->format($date);
 									<i class="fa-solid fa-pen-to-square fcWhite"></i>
 								</button>
 							</form>
-							<form action="{{ route('CRUD_delete') }}" method="post" class="smallBtnUserCard">
+							<form action="{{ route('CRUD_delete') }}" method="post" class="smallBtnBin smallBtnUserCard">
 								@csrf
 								<input type="hidden" name="date" id="date" value="{{ $past['date'] }}">
 								<input type="hidden" name="midi_soir" id="midi_soir" value="{{ $past['midi_soir'] }}">
-								<button type="submit" class="cursorP bgRed XXLbr50 XXLflexCenteredXY">
+								<button type="submit" class="cursorP darkGrey XXLbr50 XXLflexCenteredXY">
 									<i class="fa-solid fa-trash-can fcWhite"></i>
 								</button>
 							</form>
@@ -444,11 +444,11 @@ $formattedDate = $formatter->format($date);
 									<i class="fa-solid fa-pen-to-square fcWhite"></i>
 								</button>
 							</form>
-							<form action="{{ route('CRUD_delete') }}" method="post" class="smallBtnUserCard">
+							<form action="{{ route('CRUD_delete') }}" method="post" class="smallBtnBin smallBtnUserCard">
 								@csrf
 								<input type="hidden" name="date" id="date" value="{{ $future['date'] }}">
 								<input type="hidden" name="midi_soir" id="midi_soir" value="{{ $future['midi_soir'] }}">
-								<button type="submit" class="cursorP bgRed XXLbr50 XXLflexCenteredXY">
+								<button type="submit" class="cursorP darkGrey XXLbr50 XXLflexCenteredXY">
 									<i class="fa-solid fa-trash-can fcWhite"></i>
 								</button>
 							</form>

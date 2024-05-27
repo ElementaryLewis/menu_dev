@@ -101,12 +101,10 @@ class AdminController extends Controller
 			return back()->withErrors(['user_id' => __('User not found.')]);
 		}
 
-		// Ensure that the name is always updated, even if the email is not changed
 		$user->firstname = $request->input('firstname');
 		$user->surname = $request->input('surname');
 		if ($request->has('email')) {
 			$user->email = $request->input('email');
-			$user->email_verified_at = null; // Reset email verification if email is updated
 		}
 
 		$user->save();
@@ -154,26 +152,15 @@ class AdminController extends Controller
 	 */
 	public function destroy(Request $request): RedirectResponse
 	{
-		// Retrieve the selected user's email from the request
 		$selectedUser = $request->input('user_id');
 
-		// Find the user by email
 		$user = User::find($selectedUser);
 
 		if (!$user) {
-			// Handle the case where the user is not found
-			// For example, redirect back with an error message
 			return back()->withErrors(['user_id' => __('User not found.')]);
 		}
 
-		//$request->validateWithBag('userDeletion', [
-		//	'id' => ['required', 'user_id'],
-		//]);
-
 		$user->delete();
-
-		//$request->session()->invalidate();
-		//$request->session()->regenerateToken();
 
 		$users = User::all();
 		return Redirect::route('admin.users', ['users' => $users])

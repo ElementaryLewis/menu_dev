@@ -47,15 +47,14 @@ $formattedDate = $formatter->format($date);
 					<div class="XXLw-80 Sw-90 XXLmAuto">
 						<div class="XXLw-100 XXLh-100 XXLbr20">
 							<h6>Conception de l'application pour l'affichage d'informations sur écrans à destination de
-								campagnes de communication
-								interne :</h6>
+								campagnes de communication interne :</h6>
 							<ul class="pb2">
 								<li>Lewis Plommé Mallet (stagiaire en formation chez Via Formation pour un titre professionnelle
 									en développement web & web mobile)
 								</li>
 								<li>Vincent Sahuc (Chargé de communication du Campus Terre & Avenir 2023 - 2024)
 								</li>
-								<li>Frédéric Renaud (Chargé du parc informatique et du système réseau)</li>
+								<li>Frédéric Renault (Chargé du parc informatique et du système réseau)</li>
 							</ul>
 							<h6>Conception maquettes et wireframes :</h6>
 							<ul class="pb2">
@@ -72,10 +71,14 @@ $formattedDate = $formatter->format($date);
 								<li>Développement HTML & CSS : Vincent Sahuc</li>
 								<li>Développement Javascript : Lewis Plommée Mallet & Vincent Sahuc</li>
 							</ul>
-							<h6>Gestion des bases de données :</h6>
+							<h6>Gestion et Responsable des bases de données :</h6>
 							<ul class="pb2">
 								<li>Lewis Plommée Mallet</li>
-								<li>Frédéric Renaud</li>
+								<li>Frédéric Renault</li>
+							</ul>
+							<h6>Gestion et Responsable des comptes :</h6>
+							<ul class="pb2">
+								<li>Frédéric Renault</li>
 							</ul>
 							<h6>En partenariat avec <a href="https://www.viaformation.fr/">
 									<h6>Via Formation</h6>

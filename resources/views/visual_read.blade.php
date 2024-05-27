@@ -60,7 +60,7 @@ $formattedDate = $formatter->format($date);
 			<div id="entreeViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/salade.svg') }}" alt="Entrée" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/salade.svg') }}" alt="Icône de l'Entrée" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Entrée
@@ -112,7 +112,7 @@ $formattedDate = $formatter->format($date);
 			<div id="platViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/plat.svg') }}" alt="Plat" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/plat.svg') }}" alt="Icône du Plat" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Plat
@@ -161,7 +161,7 @@ $formattedDate = $formatter->format($date);
 			<div id="accompagnementViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/accompagnement.svg') }}" alt="Accompagnement" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/accompagnement.svg') }}" alt="Icône de l'Accompagnement" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Accompagnement
@@ -201,7 +201,7 @@ $formattedDate = $formatter->format($date);
 			<div id="fromageViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/fromage.svg') }}" alt="Fromage" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/fromage.svg') }}" alt="Icône du Fromage" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Fromage
@@ -250,7 +250,7 @@ $formattedDate = $formatter->format($date);
 			<div id="dessertViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/dessert.svg') }}" alt="Dessert" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/dessert.svg') }}" alt="Icône du Dessert" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Dessert
@@ -311,7 +311,7 @@ $formattedDate = $formatter->format($date);
 			<div id="fruitViewMode" class="XXLspan-12 XXLw-90 XXLmAuto pt1 pb1">
 				<div class="title XXLw-100 XXLmAuto XXLflexCenteredXY">
 					<div class="imageMeal XXLflexCenteredXY">
-						<img class="borderBox" src="{{ asset('img/svg/fruit.svg') }}" alt="Fruit" />
+						<img class="fcWhite borderBox" src="{{ asset('img/svg/fruit.svg') }}" alt="Icône du Fruit" />
 					</div>
 					<h5 class="XXLflexCenteredXY mb03 XXLcenter fcWhite pb1 uc">
 						Fruit
@@ -355,6 +355,21 @@ $formattedDate = $formatter->format($date);
 						<h6 class="mb07 fcIce"> {{ $menu['fruit4'] ?? '' }} </h6>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div>
+			<div class="XXLflexVerticalAlign XXLw-90 XXLmAuto XXLbr20">
+				<form action="{{ route('CRUD_delete') }}" method="post">
+					@csrf
+					<input type="hidden" name="date" id="date" value="{{ $menu['date'] }}">
+					<input type="hidden" name="midi_soir" id="midi_soir" value="{{ $menu['midi_soir'] }}">
+					<button type="submit" id="openPopup" class="btnContainer pb1 XXLw-50 XLw-60 Mw-70 Sw-90 XXLmAuto mt1 mb1">
+						<div class="btnText bgRed XXLbr50">Supprimer le menu</div>
+						<div class="btnIcon fcdarkGrey XXLop0">
+							<i class="fa-solid fa-trash-can fcBlack"></i>
+						</div>
+					</button>
+				</form>
 			</div>
 		</div>
 		<!-- BEGINNING : MENU MANAGER BUTTON'S FORM -->
