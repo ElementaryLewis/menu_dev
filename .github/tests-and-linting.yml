@@ -1,0 +1,31 @@
+name: Tests & Linting
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  tests-and-linting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+        with:
+          php-version: "8.3"
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+      - name: Install Composer Dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      - name: Generate Key
+        run: php artisan key:generate
+      - name: Laravel Pint
+        run: vendor/bin/pint
+      - name: Commit Changes
+        uses: EndBug/add-and-commit@v9
+      - name: Execute PHPUnit tests
+        run: php artisan test
