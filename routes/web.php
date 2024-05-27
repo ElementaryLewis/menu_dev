@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\MenuController;
 use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MenuController;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Route;
 
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';
 
 Route::get('/credits', [MenuController::class, 'credits'])->name('credits');
 Route::get('/contacts', [MenuController::class, 'contacts'])->name('contacts');

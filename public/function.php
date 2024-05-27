@@ -2,7 +2,8 @@
 
 function getPDO($db, $root, $password)
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=' . $db, $root, $password);
+    $pdo = new PDO('mysql:host=localhost;dbname='.$db, $root, $password);
+
     return $pdo;
 }
 
@@ -26,10 +27,10 @@ function getMenu($pdo, $date, $midi_soir)
 
 function getCountPage()
 {
-    $con = mysqli_connect("localhost", "root", "+Koppai1889", "podcast");
+    $con = mysqli_connect('localhost', 'root', '+Koppai1889', 'podcast');
     if (mysqli_connect_errno()) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        die();
+        echo 'Failed to connect to MySQL: '.mysqli_connect_error();
+        exit();
     }
 
     $result_count = mysqli_query(
@@ -45,7 +46,7 @@ function getCountPage()
 function getPodcastsWithCategories($pdo, $search_post)
 {
 
-    if (!empty($search_post)) {
+    if (! empty($search_post)) {
 
         $query = $pdo->prepare('SELECT num_post, title, descrip, descrip_short, audio_link,
       p.created_at, p.updated_at, p.num_category, c.name
@@ -56,7 +57,7 @@ function getPodcastsWithCategories($pdo, $search_post)
         LIMIT 20
         ');
 
-        $query->bindValue('search', '%' . $search_post . '%', PDO::PARAM_STR);
+        $query->bindValue('search', '%'.$search_post.'%', PDO::PARAM_STR);
         $query->execute();
 
         $posts = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -78,7 +79,7 @@ function getPodcastsWithCategories($pdo, $search_post)
 
 function getPodcastsWithCategory($pdo, $num_post)
 {
-    if (!empty($num_post)) {
+    if (! empty($num_post)) {
         $query = $pdo->prepare('SELECT num_post, title, descrip, descrip_short, audio_link,
         p.created_at, p.updated_at, p.num_category, name
         FROM post p
@@ -91,11 +92,11 @@ function getPodcastsWithCategory($pdo, $num_post)
 
         if (
             empty($num_post) ||
-            !(
+            ! (
                 $post = current(
                     array_filter(
                         $posts,
-                        fn(array $post) => $post['num_post'] === (int) $num_post
+                        fn (array $post) => $post['num_post'] === (int) $num_post
                     )
                 )
             )
@@ -134,5 +135,6 @@ function getCommentWithUsers($pdo, $num_post)
     if (empty($comments)) {
         return false;
     }
+
     return $comments;
 }
