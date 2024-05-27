@@ -364,13 +364,13 @@ $formattedDate = $formatter->format($date);
 				<!--END : MENU -->
 			@endforeach
 		</div>
-
 	</div>
 	<!--END : MENUS PASSES -->
 	<!--BEGINNING : MENUS A VENIR -->
 	<div class="grid XXLw-100 pt2 pb2 bgIce">
 		<div class="XXLspan-12 pb3">
-			<div class="pt1 pb1 XXLw-80 XXLmAuto separator1 bgIce"></div>
+			<div class="pt1 pb1 XXLw-80 XXLmAuto separator1 bgIce">
+			</div>
 			<div class="XXLflex XXLflexCenteredXY XXLh-90">
 				<h3 class="XXLcenter XXLflexCenteredXY XXLmAuto XXLh-90">Menus à venir</h3>
 			</div>
@@ -459,7 +459,7 @@ $formattedDate = $formatter->format($date);
 			<!--END : MENU -->
 		</div>
 	</div>
-	<div class="XXLflexCenteredXY bgIce">
+	<div class="XXLflexCenteredXY bgIce pt3">
 		<div class="XXLflex XXLflexCenteredXY XXLh-90">
 			<h3 class="XXLcenter XXLflexCenteredXY XXLmAuto XXLh-90">Trouver un menu</h3>
 		</div>
