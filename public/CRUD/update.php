@@ -5,10 +5,10 @@ $pdo = getPDO($_ENV['DB_HOST'], $_ENV['DB_DATABASE'], $_ENV['DB_USERNAME'], $_EN
 $date = $_POST['date'];
 $midi_soir = $_POST['midi_soir'];
 
-if (!empty ($_POST)) {
+if (! empty($_POST)) {
     $errors = [];
 
-    if (!$errors) {
+    if (! $errors) {
 
         // Update Menu Database
         $query1 = $pdo->prepare(

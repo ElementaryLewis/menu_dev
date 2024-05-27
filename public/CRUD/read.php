@@ -20,9 +20,9 @@ function getMenu($pdo, $date, $midi_soir)
 
 function getDateMenu($pdo)
 {
-    date_default_timezone_set("Europe/Paris");
+    date_default_timezone_set('Europe/Paris');
     $present = date('Y-m-d');
-    $future = date('Y-m-d', mktime(0, 0, 0, date("m"), date("d") + 14, date("Y")));
+    $future = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 14, date('Y')));
 
     $query = $pdo->prepare('SELECT date, midi_soir
         FROM menu

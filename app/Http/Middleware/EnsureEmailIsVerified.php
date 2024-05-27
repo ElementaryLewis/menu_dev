@@ -17,9 +17,9 @@ class EnsureEmailIsVerified
     public function handle(Request $request, Closure $next): Response
     {
         if (
-            !$request->user() ||
+            ! $request->user() ||
             ($request->user() instanceof MustVerifyEmail &&
-                !$request->user()->hasVerifiedEmail())
+                ! $request->user()->hasVerifiedEmail())
         ) {
             return response()->json(['message' => 'L\'adresse e-mail est incorrecte'], 409);
         }
