@@ -4,166 +4,170 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
 use App\Models\User;
-use Illuminate\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\Rules\Password;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Validation\Rules\Password;
+use Illuminate\View\View;
 
 class AdminController extends Controller
 {
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-	/**
-	 * Display a listing of the resource.
-	 */
-	public function show(): View
-	{
-		$users = User::all(); // Retrieve all users
-		return view('admin.admin_users', ['users' => $users]);
-	}
+    /**
+     * Display a listing of the resource.
+     */
+    public function show(): View
+    {
+        $users = User::all(); // Retrieve all users
 
-	public function view(Request $request)
-	{
-		$selectedUser = $request->input('user_id');
+        return view('admin.admin_users', ['users' => $users]);
+    }
 
-		// Find the user by email
-		$user = User::where('id', $selectedUser)->first();
+    public function view(Request $request)
+    {
+        $selectedUser = $request->input('user_id');
 
-		// Check if the user exists
-		if (!$user) {
-			// Handle the case where the user is not found
-			// For example, redirect back with an error message
-			return back()->withErrors(['user_email' => __('User not found.')]);
-		}
+        // Find the user by email
+        $user = User::where('id', $selectedUser)->first();
 
-		// Return the view with the selected user
-		return view('admin.admin_view', [
-			'user' => $user,
-		]);
-	}
+        // Check if the user exists
+        if (! $user) {
+            // Handle the case where the user is not found
+            // For example, redirect back with an error message
+            return back()->withErrors(['user_email' => __('User not found.')]);
+        }
 
-	public function edit(Request $request)
-	{
-		// Retrieve the selected user's email from the request
-		$selectedUser = $request->input('user_id');
+        // Return the view with the selected user
+        return view('admin.admin_view', [
+            'user' => $user,
+        ]);
+    }
 
-		// Find the user by email
-		$user = User::where('id', $selectedUser)->first();
+    public function edit(Request $request)
+    {
+        // Retrieve the selected user's email from the request
+        $selectedUser = $request->input('user_id');
 
-		// Check if the user exists
-		if (!$user) {
-			// Handle the case where the user is not found
-			// For example, redirect back with an error message
-			return back()->withErrors(['user_email' => __('User not found.')]);
-		}
+        // Find the user by email
+        $user = User::where('id', $selectedUser)->first();
 
-		// Return the view with the selected user
-		return view('admin.admin_edit', [
-			'user' => $user,
-		]);
-	}
+        // Check if the user exists
+        if (! $user) {
+            // Handle the case where the user is not found
+            // For example, redirect back with an error message
+            return back()->withErrors(['user_email' => __('User not found.')]);
+        }
 
-	public function password(Request $request)
-	{
-		// Retrieve the selected user's email from the request
-		$selectedUser = $request->input('user_id');
+        // Return the view with the selected user
+        return view('admin.admin_edit', [
+            'user' => $user,
+        ]);
+    }
 
-		// Find the user by email
-		$user = User::where('id', $selectedUser)->first();
+    public function password(Request $request)
+    {
+        // Retrieve the selected user's email from the request
+        $selectedUser = $request->input('user_id');
 
-		// Check if the user exists
-		if (!$user) {
-			// Handle the case where the user is not found
-			// For example, redirect back with an error message
-			return back()->withErrors(['user_email' => __('User not found.')]);
-		}
+        // Find the user by email
+        $user = User::where('id', $selectedUser)->first();
 
-		// Return the view with the selected user
-		return view('admin.admin_password', [
-			'user' => $user,
-		]);
-	}
+        // Check if the user exists
+        if (! $user) {
+            // Handle the case where the user is not found
+            // For example, redirect back with an error message
+            return back()->withErrors(['user_email' => __('User not found.')]);
+        }
 
-	/**
-	 * Update the specified resource in storage.
-	 */
-	public function update(ProfileUpdateRequest $request): RedirectResponse
-	{
-		$selectedUser = $request->input('user_id');
-		$user = User::find($selectedUser);
+        // Return the view with the selected user
+        return view('admin.admin_password', [
+            'user' => $user,
+        ]);
+    }
 
-		if (!$user) {
-			return back()->withErrors(['user_id' => __('User not found.')]);
-		}
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(ProfileUpdateRequest $request): RedirectResponse
+    {
+        $selectedUser = $request->input('user_id');
+        $user = User::find($selectedUser);
 
-		$user->firstname = $request->input('firstname');
-		$user->surname = $request->input('surname');
-		if ($request->has('email')) {
-			$user->email = $request->input('email');
-		}
+        if (! $user) {
+            return back()->withErrors(['user_id' => __('User not found.')]);
+        }
 
-		$user->save();
+        $user->firstname = $request->input('firstname');
+        $user->surname = $request->input('surname');
+        if ($request->has('email')) {
+            $user->email = $request->input('email');
+        }
 
-		$users = User::all();
-		return Redirect::route('admin.users', ['users' => $users])
-			->with('status', 'profile-updated');
-	}
+        $user->save();
 
-	public function update_password(Request $request): RedirectResponse
-	{
-		// Retrieve the selected user's email from the request
-		$selectedUser = $request->input('user_id');
+        $users = User::all();
 
-		// Find the user by email
-		$user = User::find($selectedUser);
+        return Redirect::route('admin.users', ['users' => $users])
+            ->with('status', 'profile-updated');
+    }
 
-		if (!$user) {
-			// Handle the case where the user is not found
-			// For example, redirect back with an error message
-			return back()->withErrors(['user_id' => __('User not found.')]);
-		}
+    public function update_password(Request $request): RedirectResponse
+    {
+        // Retrieve the selected user's email from the request
+        $selectedUser = $request->input('user_id');
 
-		$validated = $request->validateWithBag('updatePassword', [
-			'user_id' => ['required', 'exists:users,id'],
-			'password' => [
-				'required',
-				Password::defaults(),
-				'confirmed',
-				'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[&é(§è!çà)-_^$ù%:;.,?+*<>])[A-Za-z\d&é(§è!çà)-_^$ù%:;.,?+*<>]{8,}$/'
-			],
-		]);
+        // Find the user by email
+        $user = User::find($selectedUser);
 
-		$user->update([
-			'password' => Hash::make($validated['password']),
-		]);
+        if (! $user) {
+            // Handle the case where the user is not found
+            // For example, redirect back with an error message
+            return back()->withErrors(['user_id' => __('User not found.')]);
+        }
 
-		$users = User::all();
-		return Redirect::route('admin.users', ['users' => $users])
-			->with('status', 'password-updated');
-	}
+        $validated = $request->validateWithBag('updatePassword', [
+            'user_id' => ['required', 'exists:users,id'],
+            'password' => [
+                'required',
+                Password::defaults(),
+                'confirmed',
+                'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[&é(§è!çà)-_^$ù%:;.,?+*<>])[A-Za-z\d&é(§è!çà)-_^$ù%:;.,?+*<>]{8,}$/',
+            ],
+        ]);
 
-	/**
-	 * Remove the specified resource from storage.
-	 */
-	public function destroy(Request $request): RedirectResponse
-	{
-		$selectedUser = $request->input('user_id');
+        $user->update([
+            'password' => Hash::make($validated['password']),
+        ]);
 
-		$user = User::find($selectedUser);
+        $users = User::all();
 
-		if (!$user) {
-			return back()->withErrors(['user_id' => __('User not found.')]);
-		}
+        return Redirect::route('admin.users', ['users' => $users])
+            ->with('status', 'password-updated');
+    }
 
-		$user->delete();
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Request $request): RedirectResponse
+    {
+        $selectedUser = $request->input('user_id');
 
-		$users = User::all();
-		return Redirect::route('admin.users', ['users' => $users])
-			->with('status', 'profile-deleted');
-	}
+        $user = User::find($selectedUser);
+
+        if (! $user) {
+            return back()->withErrors(['user_id' => __('User not found.')]);
+        }
+
+        $user->delete();
+
+        $users = User::all();
+
+        return Redirect::route('admin.users', ['users' => $users])
+            ->with('status', 'profile-deleted');
+    }
 }
