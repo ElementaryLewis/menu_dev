@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.2",
         "creativeorange/gravatar": "^1.0",
+        "illuminate/redis": "*",
         "laravel-lang/common": "^6.0",
         "laravel-lang/locales": "^2.6",
         "laravel/framework": "^11.0",

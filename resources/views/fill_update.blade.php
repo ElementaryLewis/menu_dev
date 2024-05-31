@@ -146,76 +146,76 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE ENTREE -->
 							<!-- BEGINNING : ENTREE 1 -->
 							<div class="menuPrompt pt1">
-								<label for="entree1" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_1" class="uc XXLfw600 pl07 mb07">
 									Entrée 1
 								</label>
 								<div>
-									<input type="text" name="entree1" id="entree1" value="{{ old('entree1', $menu['entree1']) }}"
+									<input type="text" name="entree_1" id="entree_1" value="{{ old('entree_1', $menu['entree_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree1" name="ab_entree1" value="1"
-											@if ($menu['ab_entree1'] == 1 || old('ab_entree1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree1" name="toque_entree1" value="1"
-											@if ($menu['toque_entree1'] == 1 || old('toque_entree1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_1" name="ab_entree_1" value="1"
+											@if ($menu['ab_entree_1'] == 1 || old('ab_entree_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_1" name="toque_entree_1" value="1"
+											@if ($menu['toque_entree_1'] == 1 || old('toque_entree_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 1 -->
 							<!-- BEGINNING : ENTREE 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree2" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_2" class="uc XXLfw600 pl07 mb07">
 									Entrée 2
 								</label>
 								<div>
-									<input type="text" name="entree2" id="entree2" value="{{ old('entree2', $menu['entree2']) }}"
+									<input type="text" name="entree_2" id="entree_2" value="{{ old('entree_2', $menu['entree_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree2" name="ab_entree2" value="1"
-											@if ($menu['ab_entree2'] == 1 || old('ab_entree2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree2" name="toque_entree2" value="1"
-											@if ($menu['toque_entree2'] == 1 || old('toque_entree2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_2" name="ab_entree_2" value="1"
+											@if ($menu['ab_entree_2'] == 1 || old('ab_entree_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_2" name="toque_entree_2" value="1"
+											@if ($menu['toque_entree_2'] == 1 || old('toque_entree_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 2 -->
 							<!-- BEGINNING : ENTREE 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree3" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_3" class="uc XXLfw600 pl07 mb07">
 									Entrée 3
 								</label>
 								<div>
-									<input type="text" name="entree3" id="entree3" value="{{ old('entree3', $menu['entree3']) }}"
+									<input type="text" name="entree_3" id="entree_3" value="{{ old('entree_3', $menu['entree_3']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree3" name="ab_entree3" value="1"
-											@if ($menu['ab_entree3'] == 1 || old('ab_entree3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree3" name="toque_entree3" value="1"
-											@if ($menu['toque_entree3'] == 1 || old('toque_entree3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_3" name="ab_entree_3" value="1"
+											@if ($menu['ab_entree_3'] == 1 || old('ab_entree_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_3" name="toque_entree_3" value="1"
+											@if ($menu['toque_entree_3'] == 1 || old('toque_entree_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 3 -->
 							<!-- BEGINNING : ENTREE 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree4" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_4" class="uc XXLfw600 pl07 mb07">
 									Entrée 4
 								</label>
 								<div>
-									<input type="text" name="entree4" id="entree4" value="{{ old('entree4', $menu['entree4']) }}"
+									<input type="text" name="entree_4" id="entree_4" value="{{ old('entree_4', $menu['entree_4']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree4" name="ab_entree4" value="1"
-											@if ($menu['ab_entree4'] == 1 || old('ab_entree4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input id="toque_entree4" name="toque_entree4" value="1" class="checkboxHandMade" type="checkbox"
-											@if ($menu['toque_entree4'] == 1 || old('toque_entree4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_4" name="ab_entree_4" value="1"
+											@if ($menu['ab_entree_4'] == 1 || old('ab_entree_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input id="toque_entree_4" name="toque_entree_4" value="1" class="checkboxHandMade" type="checkbox"
+											@if ($menu['toque_entree_4'] == 1 || old('toque_entree_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -238,76 +238,76 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE PLAT -->
 							<!-- BEGINNING : PLAT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="plat1" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_1" class="uc XXLfw600 pl07 mb07">
 									Plat 1
 								</label>
 								<div>
-									<input type="text" name="plat1" id="plat1" value="{{ old('plat1', $menu['plat1']) }}"
+									<input type="text" name="plat_1" id="plat_1" value="{{ old('plat_1', $menu['plat_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat1" name="ab_plat1" value="1"
-											@if ($menu['ab_plat1'] == 1 || old('ab_plat1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat1" name="toque_plat1" value="1"
-											@if ($menu['toque_plat1'] == 1 || old('toque_plat1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_1" name="ab_plat_1" value="1"
+											@if ($menu['ab_plat_1'] == 1 || old('ab_plat_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_1" name="toque_plat_1" value="1"
+											@if ($menu['toque_plat_1'] == 1 || old('toque_plat_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: PLAT 1 -->
 							<!-- BEGINNING : PLAT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat2" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_2" class="uc XXLfw600 pl07 mb07">
 									Plat 2
 								</label>
 								<div>
-									<input type="text" name="plat2" id="plat2" value="{{ old('plat2', $menu['plat2']) }}"
+									<input type="text" name="plat_2" id="plat_2" value="{{ old('plat_2', $menu['plat_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat2" name="ab_plat2" value="1"
-											@if ($menu['ab_plat2'] == 1 || old('ab_plat2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat2" name="toque_plat2" value="1"
-											@if ($menu['toque_plat2'] == 1 || old('toque_plat2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_2" name="ab_plat_2" value="1"
+											@if ($menu['ab_plat_2'] == 1 || old('ab_plat_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_2" name="toque_plat_2" value="1"
+											@if ($menu['toque_plat_2'] == 1 || old('toque_plat_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : PLAT 2 -->
 							<!-- BEGINNING : PLAT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat3" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_3" class="uc XXLfw600 pl07 mb07">
 									Plat 3
 								</label>
 								<div>
-									<input type="text" name="plat3" id="plat3" value="{{ old('plat3', $menu['plat3']) }}"
+									<input type="text" name="plat_3" id="plat_3" value="{{ old('plat_3', $menu['plat_3']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat3" name="ab_plat3" value="1"
-											@if ($menu['ab_plat3'] == 1 || old('ab_plat3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat3" name="toque_plat3" value="1"
-											@if ($menu['toque_plat3'] == 1 || old('toque_plat3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_3" name="ab_plat_3" value="1"
+											@if ($menu['ab_plat_3'] == 1 || old('ab_plat_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_3" name="toque_plat_3" value="1"
+											@if ($menu['toque_plat_3'] == 1 || old('toque_plat_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : PLAT 3 -->
 							<!-- BEGINNING : PLAT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat4" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_4" class="uc XXLfw600 pl07 mb07">
 									Plat 4
 								</label>
 								<div>
-									<input type="text" name="plat4" id="plat4" value="{{ old('plat4', $menu['plat4']) }}"
+									<input type="text" name="plat_4" id="plat_4" value="{{ old('plat_4', $menu['plat_4']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat4" name="ab_plat4" value="1"
-											@if ($menu['ab_plat4'] == 1 || old('ab_plat4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat4" name="toque_plat4" value="1"
-											@if ($menu['toque_plat4'] == 1 || old('toque_plat4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_4" name="ab_plat_4" value="1"
+											@if ($menu['ab_plat_4'] == 1 || old('ab_plat_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_4" name="toque_plat_4" value="1"
+											@if ($menu['toque_plat_4'] == 1 || old('toque_plat_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -330,61 +330,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE ACCOMPAGNEMENT -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="accomp1" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_1" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 1
 								</label>
 								<div>
-									<input type="text" name="accomp1" id="accomp1" value="{{ old('accomp1', $menu['accomp1']) }}"
+									<input type="text" name="accomp_1" id="accomp_1" value="{{ old('accomp_1', $menu['accomp_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp1" name="ab_accomp1" value="1"
-											@if ($menu['ab_accomp1'] == 1 || old('ab_accomp1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp1" name="toque_accomp1" value="1"
-											@if ($menu['toque_accomp1'] == 1 || old('toque_accomp1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_1" name="ab_accomp_1" value="1"
+											@if ($menu['ab_accomp_1'] == 1 || old('ab_accomp_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_1" name="toque_accomp_1" value="1"
+											@if ($menu['toque_accomp_1'] == 1 || old('toque_accomp_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 1 -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="accomp2" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_2" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 2
 								</label>
 								<div>
-									<input type="text" name="accomp2" id="accomp2" value="{{ old('accomp2', $menu['accomp2']) }}"
+									<input type="text" name="accomp_2" id="accomp_2" value="{{ old('accomp_2', $menu['accomp_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp2" name="ab_accomp2" value="1"
-											@if ($menu['ab_accomp2'] == 1 || old('ab_accomp2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp2" name="toque_accomp2" value="1"
-											@if ($menu['toque_accomp2'] == 1 || old('toque_accomp2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_2" name="ab_accomp_2" value="1"
+											@if ($menu['ab_accomp_2'] == 1 || old('ab_accomp_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_2" name="toque_accomp_2" value="1"
+											@if ($menu['toque_accomp_2'] == 1 || old('toque_accomp_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 2 -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="accomp3" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_3" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 3
 								</label>
 								<div>
-									<input type="text" name="accomp3" id="accomp3" value="{{ old('accomp3', $menu['accomp3']) }}"
+									<input type="text" name="accomp_3" id="accomp_3" value="{{ old('accomp_3', $menu['accomp_3']) }}"
 										type="text" class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp3" name="ab_accomp3" value="1"
-											@if ($menu['ab_accomp3'] == 1 || old('ab_accomp3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp3" name="toque_accomp3" value="1"
-											@if ($menu['toque_accomp3'] == 1 || old('toque_accomp3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_3" name="ab_accomp_3" value="1"
+											@if ($menu['ab_accomp_3'] == 1 || old('ab_accomp_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_3" name="toque_accomp_3" value="1"
+											@if ($menu['toque_accomp_3'] == 1 || old('toque_accomp_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 3 -->
+							<!-- BEGINNING : ACCOMPAGNEMENT 4 -->
+							<div class="menuPrompt XXLsepIce80 pt1">
+								<label for="accomp_4" class="uc XXLfw600 pl07 mb07">
+									Accompagnement 4
+								</label>
+								<div>
+									<input type="text" name="accomp_4" id="accomp_4" value="{{ old('accomp_4', $menu['accomp_4']) }}"
+										type="text" class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
+									<div class="mb1">
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_4" name="ab_accomp_4" value="1"
+											@if ($menu['ab_accomp_4'] == 1 || old('ab_accomp_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_4" name="toque_accomp_4" value="1"
+											@if ($menu['toque_accomp_4'] == 1 || old('toque_accomp_4')) checked @endif />
+									</div>
+								</div>
+							</div>
+							<!-- END : ACCOMPAGNEMENT 4 -->
 						</div>
 						<!-- END : ACCOMPAGNEMENT -->
 						<!-- BEGINNING : FROMAGE -->
@@ -403,76 +422,76 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE FROMAGE -->
 							<!-- BEGINNING : FROMAGE 1 -->
 							<div class="menuPrompt pt1">
-								<label for="fromage1" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_1" class="uc XXLfw600 pl07 mb07">
 									fromage 1
 								</label>
 								<div>
-									<input type="text" name="fromage1" id="fromage1" value="{{ old('fromage1', $menu['fromage1']) }}"
+									<input type="text" name="fromage_1" id="fromage_1" value="{{ old('fromage_1', $menu['fromage_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage1" name="ab_fromage1" value="1"
-											@if ($menu['ab_fromage1'] == 1 || old('ab_fromage1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage1" name="europe_fromage1" value="1"
-											@if ($menu['europe_fromage1'] == 1 || old('europe_fromage1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_1" name="ab_fromage_1" value="1"
+											@if ($menu['ab_fromage_1'] == 1 || old('ab_fromage_1')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_1" name="europe_fromage_1"
+											value="1" @if ($menu['europe_fromage_1'] == 1 || old('europe_fromage_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 1 -->
 							<!-- BEGINNING : FROMAGE 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage2" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_2" class="uc XXLfw600 pl07 mb07">
 									fromage 2
 								</label>
 								<div>
-									<input type="text" name="fromage2" id="fromage2" value="{{ old('fromage2', $menu['fromage2']) }}"
+									<input type="text" name="fromage_2" id="fromage_2" value="{{ old('fromage_2', $menu['fromage_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage2" name="ab_fromage2" value="1"
-											@if ($menu['ab_fromage2'] == 1 || old('ab_fromage2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage2" name="europe_fromage2" value="1"
-											@if ($menu['europe_fromage2'] == 1 || old('europe_fromage2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_2" name="ab_fromage_2" value="1"
+											@if ($menu['ab_fromage_2'] == 1 || old('ab_fromage_2')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_2" name="europe_fromage_2"
+											value="1" @if ($menu['europe_fromage_2'] == 1 || old('europe_fromage_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 2 -->
 							<!-- BEGINNING : FROMAGE 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage3" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_3" class="uc XXLfw600 pl07 mb07">
 									fromage 3
 								</label>
 								<div>
-									<input type="text" name="fromage3" id="fromage3" value="{{ old('fromage3', $menu['fromage3']) }}"
+									<input type="text" name="fromage_3" id="fromage_3" value="{{ old('fromage_3', $menu['fromage_3']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage3" name="ab_fromage3" value="1"
-											@if ($menu['ab_fromage3'] == 1 || old('ab_fromage3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage3" name="europe_fromage3" value="1"
-											@if ($menu['europe_fromage3'] == 1 || old('europe_fromage3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_3" name="ab_fromage_3" value="1"
+											@if ($menu['ab_fromage_3'] == 1 || old('ab_fromage_3')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_3" name="europe_fromage_3"
+											value="1" @if ($menu['europe_fromage_3'] == 1 || old('europe_fromage_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 3 -->
 							<!-- BEGINNING : FROMAGE 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage4" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_4" class="uc XXLfw600 pl07 mb07">
 									fromage 4
 								</label>
 								<div>
-									<input type="text" name="fromage4" id="fromage4" value="{{ old('fromage4', $menu['fromage4']) }}"
+									<input type="text" name="fromage_4" id="fromage_4" value="{{ old('fromage_4', $menu['fromage_4']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage4" name="ab_fromage4" value="1"
-											@if ($menu['ab_fromage4'] == 1 || old('ab_fromage4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage4" name="europe_fromage4" value="1"
-											@if ($menu['europe_fromage4'] == 1 || old('europe_fromage4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_4" name="ab_fromage_4" value="1"
+											@if ($menu['ab_fromage_4'] == 1 || old('ab_fromage_4')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_4" name="europe_fromage_4"
+											value="1" @if ($menu['europe_fromage_4'] == 1 || old('europe_fromage_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -495,88 +514,76 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE DESSERT -->
 							<!-- BEGINNING : DESSERT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="dessert1" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_1" class="uc XXLfw600 pl07 mb07">
 									Dessert 1
 								</label>
 								<div>
-									<input type="text" name="dessert1" id="dessert1" value="{{ old('dessert1', $menu['dessert1']) }}"
+									<input type="text" name="dessert_1" id="dessert_1" value="{{ old('dessert_1', $menu['dessert_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert1" name="ab_dessert1" value="1"
-											@if ($menu['ab_dessert1'] == 1 || old('ab_dessert1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert1" name="toque_dessert1" value="1"
-											@if ($menu['toque_dessert1'] == 1 || old('toque_dessert1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert1" name="europe_dessert1" value="1"
-											@if ($menu['europe_dessert1'] == 1 || old('europe_dessert1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_1" name="ab_dessert_1" value="1"
+											@if ($menu['ab_dessert_1'] == 1 || old('ab_dessert_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_1" name="toque_dessert_1"
+											value="1" @if ($menu['toque_dessert_1'] == 1 || old('toque_dessert_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 1 -->
 							<!-- BEGINNING : DESSERT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert2" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_2" class="uc XXLfw600 pl07 mb07">
 									Dessert 2
 								</label>
 								<div>
-									<input type="text" name="dessert2" id="dessert2" value="{{ old('dessert2', $menu['dessert2']) }}"
+									<input type="text" name="dessert_2" id="dessert_2" value="{{ old('dessert_2', $menu['dessert_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert2" name="ab_dessert2" value="1"
-											@if ($menu['ab_dessert2'] == 1 || old('ab_dessert2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert2" name="toque_dessert2" value="1"
-											@if ($menu['toque_dessert2'] == 1 || old('toque_dessert2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert2" name="europe_dessert2" value="1"
-											@if ($menu['europe_dessert2'] == 1 || old('europe_dessert2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_2" name="ab_dessert_2" value="1"
+											@if ($menu['ab_dessert_2'] == 1 || old('ab_dessert_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_2" name="toque_dessert_2"
+											value="1" @if ($menu['toque_dessert_2'] == 1 || old('toque_dessert_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 2 -->
 							<!-- BEGINNING : DESSERT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert3" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_3" class="uc XXLfw600 pl07 mb07">
 									Dessert 3
 								</label>
 								<div>
-									<input type="text" name="dessert3" id="dessert3" value="{{ old('dessert3', $menu['dessert3']) }}"
+									<input type="text" name="dessert_3" id="dessert_3" value="{{ old('dessert_3', $menu['dessert_3']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert3" name="ab_dessert3" value="1"
-											@if ($menu['ab_dessert3'] == 1 || old('ab_dessert3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert3" name="toque_dessert3" value="1"
-											@if ($menu['toque_dessert3'] == 1 || old('toque_dessert3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert3" name="europe_dessert3" value="1"
-											@if ($menu['europe_dessert3'] == 1 || old('europe_dessert3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_3" name="ab_dessert_3" value="1"
+											@if ($menu['ab_dessert_3'] == 1 || old('ab_dessert_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_3" name="toque_dessert_3"
+											value="1" @if ($menu['toque_dessert_3'] == 1 || old('toque_dessert_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 3 -->
 							<!-- BEGINNING : DESSERT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert4" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_4" class="uc XXLfw600 pl07 mb07">
 									Dessert 4
 								</label>
 								<div>
-									<input type="text" name="dessert4" id="dessert4" value="{{ old('dessert4', $menu['dessert4']) }}"
+									<input type="text" name="dessert_4" id="dessert_4" value="{{ old('dessert_4', $menu['dessert_4']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert4" name="ab_dessert4" value="1"
-											@if ($menu['ab_dessert4'] == 1 || old('ab_dessert4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert4" name="toque_dessert4" value="1"
-											@if ($menu['toque_dessert4'] == 1 || old('toque_dessert4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert4" name="europe_dessert4" value="1"
-											@if ($menu['europe_dessert4'] == 1 || old('europe_dessert4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_4" name="ab_dessert_4" value="1"
+											@if ($menu['ab_dessert_4'] == 1 || old('ab_dessert_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_4" name="toque_dessert_4"
+											value="1" @if ($menu['toque_dessert_4'] == 1 || old('toque_dessert_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -599,76 +606,76 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE FRUIT -->
 							<!-- BEGINNING : FRUIT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="fruit1" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_1" class="uc XXLfw600 pl07 mb07">
 									Fruit 1
 								</label>
 								<div>
-									<input type="text" name="fruit1" id="fruit1" value="{{ old('fruit1', $menu['fruit1']) }}"
+									<input type="text" name="fruit_1" id="fruit_1" value="{{ old('fruit_1', $menu['fruit_1']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit1" name="ab_fruit1" value="1"
-											@if ($menu['ab_fruit1'] == 1 || old('ab_fruit1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit1" name="europe_fruit1" value="1"
-											@if ($menu['europe_fruit1'] == 1 || old('europe_fruit1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_1" name="ab_fruit_1" value="1"
+											@if ($menu['ab_fruit_1'] == 1 || old('ab_fruit_1')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_1" name="europe_fruit_1" value="1"
+											@if ($menu['europe_fruit_1'] == 1 || old('europe_fruit_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 1 -->
 							<!-- BEGINNING : FRUIT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fruit2" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_2" class="uc XXLfw600 pl07 mb07">
 									Fruit 2
 								</label>
 								<div>
-									<input type="text" name="fruit2" id="fruit2" value="{{ old('fruit2', $menu['fruit2']) }}"
+									<input type="text" name="fruit_2" id="fruit_2" value="{{ old('fruit_2', $menu['fruit_2']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit2" name="ab_fruit2" value="1"
-											@if ($menu['ab_fruit2'] == 1 || old('ab_fruit2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit2" name="europe_fruit2" value="1"
-											@if ($menu['europe_fruit2'] == 1 || old('europe_fruit2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_2" name="ab_fruit_2" value="1"
+											@if ($menu['ab_fruit_2'] == 1 || old('ab_fruit_2')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_2" name="europe_fruit_2" value="1"
+											@if ($menu['europe_fruit_2'] == 1 || old('europe_fruit_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 2 -->
 							<!-- BEGINNING : FRUIT 3 -->
 							<div class="menuPrompt pt1">
-								<label for="fruit3" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_3" class="uc XXLfw600 pl07 mb07">
 									Fruit 1
 								</label>
 								<div>
-									<input type="text" name="fruit3" id="fruit3" value="{{ old('fruit3', $menu['fruit3']) }}"
+									<input type="text" name="fruit_3" id="fruit_3" value="{{ old('fruit_3', $menu['fruit_3']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit3" name="ab_fruit3" value="1"
-											@if ($menu['ab_fruit3'] == 1 || old('ab_fruit3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit3" name="europe_fruit3" value="1"
-											@if ($menu['europe_fruit3'] == 1 || old('europe_fruit3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_3" name="ab_fruit_3" value="1"
+											@if ($menu['ab_fruit_3'] == 1 || old('ab_fruit_3')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_3" name="europe_fruit_3" value="1"
+											@if ($menu['europe_fruit_3'] == 1 || old('europe_fruit_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 3 -->
 							<!-- BEGINNING : FRUIT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fruit4" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_4" class="uc XXLfw600 pl07 mb07">
 									Fruit 2
 								</label>
 								<div>
-									<input type="text" name="fruit4" id="fruit4" value="{{ old('fruit4', $menu['fruit4']) }}"
+									<input type="text" name="fruit_4" id="fruit_4" value="{{ old('fruit_4', $menu['fruit_4']) }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit4" name="ab_fruit4" value="1"
-											@if ($menu['ab_fruit4'] == 1 || old('ab_fruit4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit4" name="europe_fruit4" value="1"
-											@if ($menu['europe_fruit4'] == 1 || old('europe_fruit4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_4" name="ab_fruit_4" value="1"
+											@if ($menu['ab_fruit_4'] == 1 || old('ab_fruit_4')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_4" name="europe_fruit_4" value="1"
+											@if ($menu['europe_fruit_4'] == 1 || old('europe_fruit_4')) checked @endif />
 									</div>
 								</div>
 							</div>

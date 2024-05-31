@@ -74,19 +74,27 @@
 .checkboxAB,
 .checkboxHandMade,
 .checkboxEurope,
+.iconAB,
+.iconHandMade,
+.iconEurope,
 .checkboxAB::after,
 .checkboxHandMade::after,
-.checkboxEurope::after {
+.checkboxEurope::after,
+.iconAB::after,
+.iconHandMade::after,
+.iconEurope::after {
 	width: 1.5em;
 	height: 1.5em;
 }
 
+.iconHandMade,
 .checkboxHandMade {
 	transform: translateX(2.3em);
 }
 
+.iconEurope,
 .checkboxEurope {
-	transform: translateX(4.3em);
+	transform: translateX(2.3em); /*4.3em as third checkbox*/
 }
 
 /* .checkboxAB::after,
@@ -95,15 +103,15 @@
 	margin-left: 2em;
 } */
 
-.checkboxAB::after {
+.iconAB::after {
 	content: url(../img/svg/Fichier\ 1.svg);
 }
 
-.checkboxHandMade::after {
+.iconHandMade::after {
 	content: url(../img/svg/Fichier\ 4.svg);
 }
 
-.checkboxEurope::after {
+.iconEurope::after {
 	content: url(../img/svg/Fichier\ 2.svg);
 }
 
@@ -230,9 +238,15 @@
 	.checkboxAB,
 	.checkboxHandMade,
 	.checkboxEurope,
+	.iconAB,
+	.iconHandMade,
+	.iconEurope,
 	.checkboxAB::after,
 	.checkboxHandMade::after,
-	.checkboxEurope::after {
+	.checkboxEurope::after,
+	.iconAB::after,
+	.iconHandMade::after,
+	.iconEurope::after {
 		width: 1.2em;
 		height: 1.2em;
 	}
@@ -243,12 +257,14 @@
 		margin-left: 1.5em;
 	} */
 
-	.checkboxHandMade {
+	.checkboxHandMade,
+	.iconHandMade	{
 		transform: translateX(1.3em);
 	}
 
-	.checkboxEurope {
-		transform: translateX(2.3em);
+	.checkboxEurope,
+	.iconEurope	{
+		transform: translateX(1.3em);
 	}
 
 	#closePopUp {

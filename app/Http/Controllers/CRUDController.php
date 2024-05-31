@@ -10,415 +10,404 @@ use Illuminate\Support\Facades\Redirect;
 
 class CRUDController extends Controller
 {
-    public function CRUD_create(MenuRequest $request): RedirectResponse
-    {
-        $validated = $request->validated();
+	public function CRUD_create(MenuRequest $request): RedirectResponse
+	{
+		$validated = $request->validated();
 
-        Menu::create($validated);
+		Menu::create($validated);
 
-        return redirect()->route('cree_date')->with('status', 'menu_created');
-    }
+		return redirect()->route('cree_date')->with('status', 'menu_created');
+	}
 
-    public function CRUD_update(MenuRequest $request)
-    {
-        $this->force_fill($request);
+	public function CRUD_update(MenuRequest $request)
+	{
+		$this->force_fill($request);
 
-        return Redirect::route('modifier_date')
-            ->with('status', 'menu_modified');
-    }
+		return Redirect::route('modifier_date')
+			->with('status', 'menu_modified');
+	}
 
-    public function CRUD_read_update(MenuRequest $request)
-    {
-        $this->force_fill($request);
+	public function CRUD_read_update(MenuRequest $request)
+	{
+		$this->force_fill($request);
 
-        date_default_timezone_set('Europe/Paris');
-        $past = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') - 14, date('Y')));
-        $present = date('Y-m-d');
-        $future = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 14, date('Y')));
+		date_default_timezone_set('Europe/Paris');
+		$past = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') - 14, date('Y')));
+		$past_present = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') - 1, date('Y')));
+		//$present = date('Y-m-d', mktime(0, 0, 0, 5, 20, 2024));	//for testing
+		$present = date('Y-m-d');
+		$future = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 14, date('Y')));
+		$future_present = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 1, date('Y')));
 
-        $menuPast = Menu::select('date', 'midi_soir')
-            ->whereBetween('date', [$past, $present])
-            ->orderBy('date', 'asc')
-            ->orderBy('midi_soir', 'asc')
-            ->get()
-            ->toArray();
+		$menuPast = Menu::select('date', 'midi_soir')
+			->whereBetween('date', [$past, $past_present])
+			->orderBy('date', 'asc')
+			->orderBy('midi_soir', 'asc')
+			->get()
+			->toArray();
 
-        $menuPresent = Menu::select('date', 'midi_soir')
-            ->where('date', $present)
-            ->get()
-            ->toArray();
+		$menuPresent = Menu::select('date', 'midi_soir')
+			->where('date', $present)
+			->get()
+			->toArray();
 
-        $menuFuture = Menu::select('date', 'midi_soir')
-            ->whereBetween('date', [$present, $future])
-            ->orderBy('date', 'asc')
-            ->orderBy('midi_soir', 'asc')
-            ->get()
-            ->toArray();
+		$menuFuture = Menu::select('date', 'midi_soir')
+			->whereBetween('date', [$future_present, $future])
+			->orderBy('date', 'asc')
+			->orderBy('midi_soir', 'asc')
+			->get()
+			->toArray();
 
-        return Redirect::route('voir_date', [
-            'menuPast' => $menuPast,
-            'menuPresent' => $menuPresent,
-            'menuFuture' => $menuFuture,
-        ])->with('status', 'menu_modified');
-    }
+		return Redirect::route('voir_date', [
+			'menuPast' => $menuPast,
+			'menuPresent' => $menuPresent,
+			'menuFuture' => $menuFuture,
+		])->with('status', 'menu_modified');
+	}
 
-    public function CRUD_read(Request $request)
-    {
-        $menu = Menu::where('date', $request['date'])
-            ->where('midi_soir', $request['midi_soir'])
-            ->get()
-            ->toArray();
+	public function CRUD_read(Request $request)
+	{
+		$menu = Menu::where('date', $request['date'])
+			->where('midi_soir', $request['midi_soir'])
+			->get()
+			->toArray();
 
-        if (! $menu) {
-            return redirect()->back()->with('dontexist', [
-                'date' => $request['date'],
-                'midi_soir' => $request['midi_soir'],
-            ]);
-        }
+		if (!$menu) {
+			return redirect()->back()->with('dontexist', [
+				'date' => $request['date'],
+				'midi_soir' => $request['midi_soir'],
+			]);
+		}
 
-        $menu = Menu::where('date', $request['date'])
-            ->where('midi_soir', $request['midi_soir'])
-            ->get()
-            ->toArray();
+		$menu = Menu::where('date', $request['date'])
+			->where('midi_soir', $request['midi_soir'])
+			->get()
+			->toArray();
 
-        return view('visual_read', [
-            'menu' => $menu[0],
-        ]);
-    }
+		return view('visual_read', [
+			'menu' => $menu[0],
+		]);
+	}
 
-    public function CRUD_delete(Request $request)
-    {
-        Menu::where('date', $request['date'])
-            ->where('midi_soir', $request['midi_soir'])
-            ->delete();
+	public function CRUD_delete(Request $request)
+	{
+		Menu::where('date', $request['date'])
+			->where('midi_soir', $request['midi_soir'])
+			->delete();
 
-        date_default_timezone_set('Europe/Paris');
-        $past = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') - 14, date('Y')));
-        $present = date('Y-m-d');
-        $future = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 14, date('Y')));
+		date_default_timezone_set('Europe/Paris');
+		$past = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') - 14, date('Y')));
+		$present = date('Y-m-d');
+		$future = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 14, date('Y')));
 
-        $menuPast = Menu::select('date', 'midi_soir')
-            ->whereBetween('date', [$past, $present])
-            ->orderBy('date', 'asc')
-            ->orderBy('midi_soir', 'asc')
-            ->get()
-            ->toArray();
+		$menuPast = Menu::select('date', 'midi_soir')
+			->whereBetween('date', [$past, $present])
+			->orderBy('date', 'asc')
+			->orderBy('midi_soir', 'asc')
+			->get()
+			->toArray();
 
-        $menuPresent = Menu::select('date', 'midi_soir')
-            ->where('date', $present)
-            ->get()
-            ->toArray();
+		$menuPresent = Menu::select('date', 'midi_soir')
+			->where('date', $present)
+			->get()
+			->toArray();
 
-        $menuFuture = Menu::select('date', 'midi_soir')
-            ->whereBetween('date', [$present, $future])
-            ->orderBy('date', 'asc')
-            ->orderBy('midi_soir', 'asc')
-            ->get()
-            ->toArray();
+		$menuFuture = Menu::select('date', 'midi_soir')
+			->whereBetween('date', [$present, $future])
+			->orderBy('date', 'asc')
+			->orderBy('midi_soir', 'asc')
+			->get()
+			->toArray();
 
-        return Redirect::route('voir_date', [
-            'menuPast' => $menuPast,
-            'menuPresent' => $menuPresent,
-            'menuFuture' => $menuFuture,
-        ])->with('status', 'menu_deleted');
-    }
+		return Redirect::route('voir_date', [
+			'menuPast' => $menuPast,
+			'menuPresent' => $menuPresent,
+			'menuFuture' => $menuFuture,
+		])->with('status', 'menu_deleted');
+	}
 
-    public function force_fill(MenuRequest $request)
-    {
-        $validated = $request->validated();
+	public function force_fill(MenuRequest $request)
+	{
+		$validated = $request->validated();
 
-        $menu = Menu::where('date', $validated['date'])
-            ->where('midi_soir', $validated['midi_soir'])
-            ->first();
+		$menu = Menu::where('date', $validated['date'])
+			->where('midi_soir', $validated['midi_soir'])
+			->first();
 
-        if ($menu) {
-            // Assuming $menu is the model instance you want to update
-            $menu->date = $validated['date'];
-            $menu->midi_soir = $validated['midi_soir'];
+		if ($menu) {
+			// Assuming $menu is the model instance you want to update
+			$menu->date = $validated['date'];
+			$menu->midi_soir = $validated['midi_soir'];
 
-            $menu->entree1 = $validated['entree1'];
-            $menu->entree2 = $validated['entree2'];
-            $menu->entree3 = $validated['entree3'];
-            $menu->entree4 = $validated['entree4'];
-            $menu->plat1 = $validated['plat1'];
-            $menu->plat2 = $validated['plat2'];
-            $menu->plat3 = $validated['plat3'];
-            $menu->plat4 = $validated['plat4'];
-            $menu->accomp1 = $validated['accomp1'];
-            $menu->accomp2 = $validated['accomp2'];
-            $menu->accomp3 = $validated['accomp3'];
-            $menu->fromage1 = $validated['fromage1'];
-            $menu->fromage2 = $validated['fromage2'];
-            $menu->fromage3 = $validated['fromage3'];
-            $menu->fromage4 = $validated['fromage4'];
-            $menu->dessert1 = $validated['dessert1'];
-            $menu->dessert2 = $validated['dessert2'];
-            $menu->dessert3 = $validated['dessert3'];
-            $menu->dessert4 = $validated['dessert4'];
-            $menu->fruit1 = $validated['fruit1'];
-            $menu->fruit2 = $validated['fruit2'];
-            $menu->fruit3 = $validated['fruit3'];
-            $menu->fruit4 = $validated['fruit4'];
+			$menu->entree_1 = $validated['entree_1'];
+			$menu->entree_2 = $validated['entree_2'];
+			$menu->entree_3 = $validated['entree_3'];
+			$menu->entree_4 = $validated['entree_4'];
+			$menu->plat_1 = $validated['plat_1'];
+			$menu->plat_2 = $validated['plat_2'];
+			$menu->plat_3 = $validated['plat_3'];
+			$menu->plat_4 = $validated['plat_4'];
+			$menu->accomp_1 = $validated['accomp_1'];
+			$menu->accomp_2 = $validated['accomp_2'];
+			$menu->accomp_3 = $validated['accomp_3'];
+			$menu->accomp_4 = $validated['accomp_4'];
+			$menu->fromage_1 = $validated['fromage_1'];
+			$menu->fromage_2 = $validated['fromage_2'];
+			$menu->fromage_3 = $validated['fromage_3'];
+			$menu->fromage_4 = $validated['fromage_4'];
+			$menu->dessert_1 = $validated['dessert_1'];
+			$menu->dessert_2 = $validated['dessert_2'];
+			$menu->dessert_3 = $validated['dessert_3'];
+			$menu->dessert_4 = $validated['dessert_4'];
+			$menu->fruit_1 = $validated['fruit_1'];
+			$menu->fruit_2 = $validated['fruit_2'];
+			$menu->fruit_3 = $validated['fruit_3'];
+			$menu->fruit_4 = $validated['fruit_4'];
 
-            if (isset($validated['ab_entree1'])) {
-                $menu->ab_entree1 = '1';
-            } else {
-                $menu->ab_entree1 = '0';
-            }
-            if (isset($validated['toque_entree1'])) {
-                $menu->toque_entree1 = '1';
-            } else {
-                $menu->toque_entree1 = '0';
-            }
-            if (isset($validated['ab_entree2'])) {
-                $menu->ab_entree2 = '1';
-            } else {
-                $menu->ab_entree2 = '0';
-            }
-            if (isset($validated['toque_entree2'])) {
-                $menu->toque_entree2 = '1';
-            } else {
-                $menu->toque_entree2 = '0';
-            }
-            if (isset($validated['ab_entree3'])) {
-                $menu->ab_entree3 = '1';
-            } else {
-                $menu->ab_entree3 = '0';
-            }
-            if (isset($validated['toque_entree3'])) {
-                $menu->toque_entree3 = '1';
-            } else {
-                $menu->toque_entree3 = '0';
-            }
-            if (isset($validated['ab_entree4'])) {
-                $menu->ab_entree4 = '1';
-            } else {
-                $menu->ab_entree4 = '0';
-            }
-            if (isset($validated['toque_entree4'])) {
-                $menu->toque_entree4 = '1';
-            } else {
-                $menu->toque_entree4 = '0';
-            }
+			if (isset($validated['ab_entree_1'])) {
+				$menu->ab_entree_1 = '1';
+			} else {
+				$menu->ab_entree_1 = '0';
+			}
+			if (isset($validated['toque_entree_1'])) {
+				$menu->toque_entree_1 = '1';
+			} else {
+				$menu->toque_entree_1 = '0';
+			}
+			if (isset($validated['ab_entree_2'])) {
+				$menu->ab_entree_2 = '1';
+			} else {
+				$menu->ab_entree_2 = '0';
+			}
+			if (isset($validated['toque_entree_2'])) {
+				$menu->toque_entree_2 = '1';
+			} else {
+				$menu->toque_entree_2 = '0';
+			}
+			if (isset($validated['ab_entree_3'])) {
+				$menu->ab_entree_3 = '1';
+			} else {
+				$menu->ab_entree_3 = '0';
+			}
+			if (isset($validated['toque_entree_3'])) {
+				$menu->toque_entree_3 = '1';
+			} else {
+				$menu->toque_entree_3 = '0';
+			}
+			if (isset($validated['ab_entree_4'])) {
+				$menu->ab_entree_4 = '1';
+			} else {
+				$menu->ab_entree_4 = '0';
+			}
+			if (isset($validated['toque_entree_4'])) {
+				$menu->toque_entree_4 = '1';
+			} else {
+				$menu->toque_entree_4 = '0';
+			}
 
-            if (isset($validated['ab_plat1'])) {
-                $menu->ab_plat1 = '1';
-            } else {
-                $menu->ab_plat1 = '0';
-            }
-            if (isset($validated['toque_plat1'])) {
-                $menu->toque_plat1 = '1';
-            } else {
-                $menu->toque_plat1 = '0';
-            }
-            if (isset($validated['ab_plat2'])) {
-                $menu->ab_plat2 = '1';
-            } else {
-                $menu->ab_plat2 = '0';
-            }
-            if (isset($validated['toque_plat2'])) {
-                $menu->toque_plat2 = '1';
-            } else {
-                $menu->toque_plat2 = '0';
-            }
-            if (isset($validated['ab_plat3'])) {
-                $menu->ab_plat3 = '1';
-            } else {
-                $menu->ab_plat3 = '0';
-            }
-            if (isset($validated['toque_plat3'])) {
-                $menu->toque_plat3 = '1';
-            } else {
-                $menu->toque_plat3 = '0';
-            }
-            if (isset($validated['ab_plat4'])) {
-                $menu->ab_plat4 = '1';
-            } else {
-                $menu->ab_plat4 = '0';
-            }
-            if (isset($validated['toque_plat4'])) {
-                $menu->toque_plat4 = '1';
-            } else {
-                $menu->toque_plat4 = '0';
-            }
+			if (isset($validated['ab_plat_1'])) {
+				$menu->ab_plat_1 = '1';
+			} else {
+				$menu->ab_plat_1 = '0';
+			}
+			if (isset($validated['toque_plat_1'])) {
+				$menu->toque_plat_1 = '1';
+			} else {
+				$menu->toque_plat_1 = '0';
+			}
+			if (isset($validated['ab_plat_2'])) {
+				$menu->ab_plat_2 = '1';
+			} else {
+				$menu->ab_plat_2 = '0';
+			}
+			if (isset($validated['toque_plat_2'])) {
+				$menu->toque_plat_2 = '1';
+			} else {
+				$menu->toque_plat_2 = '0';
+			}
+			if (isset($validated['ab_plat_3'])) {
+				$menu->ab_plat_3 = '1';
+			} else {
+				$menu->ab_plat_3 = '0';
+			}
+			if (isset($validated['toque_plat_3'])) {
+				$menu->toque_plat_3 = '1';
+			} else {
+				$menu->toque_plat_3 = '0';
+			}
+			if (isset($validated['ab_plat_4'])) {
+				$menu->ab_plat_4 = '1';
+			} else {
+				$menu->ab_plat_4 = '0';
+			}
+			if (isset($validated['toque_plat_4'])) {
+				$menu->toque_plat_4 = '1';
+			} else {
+				$menu->toque_plat_4 = '0';
+			}
 
-            if (isset($validated['ab_accomp1'])) {
-                $menu->ab_accomp1 = '1';
-            } else {
-                $menu->ab_accomp1 = '0';
-            }
-            if (isset($validated['toque_accomp1'])) {
-                $menu->toque_accomp1 = '1';
-            } else {
-                $menu->toque_accomp1 = '0';
-            }
-            if (isset($validated['ab_accomp2'])) {
-                $menu->ab_accomp2 = '1';
-            } else {
-                $menu->ab_accomp2 = '0';
-            }
-            if (isset($validated['toque_accomp2'])) {
-                $menu->toque_accomp2 = '1';
-            } else {
-                $menu->toque_accomp2 = '0';
-            }
-            if (isset($validated['ab_accomp3'])) {
-                $menu->ab_accomp3 = '1';
-            } else {
-                $menu->ab_accomp3 = '0';
-            }
-            if (isset($validated['toque_accomp3'])) {
-                $menu->toque_accomp3 = '1';
-            } else {
-                $menu->toque_accomp3 = '0';
-            }
+			if (isset($validated['ab_accomp_1'])) {
+				$menu->ab_accomp_1 = '1';
+			} else {
+				$menu->ab_accomp_1 = '0';
+			}
+			if (isset($validated['toque_accomp_1'])) {
+				$menu->toque_accomp_1 = '1';
+			} else {
+				$menu->toque_accomp_1 = '0';
+			}
+			if (isset($validated['ab_accomp_2'])) {
+				$menu->ab_accomp_2 = '1';
+			} else {
+				$menu->ab_accomp_2 = '0';
+			}
+			if (isset($validated['toque_accomp_2'])) {
+				$menu->toque_accomp_2 = '1';
+			} else {
+				$menu->toque_accomp_2 = '0';
+			}
+			if (isset($validated['ab_accomp_3'])) {
+				$menu->ab_accomp_3 = '1';
+			} else {
+				$menu->ab_accomp_3 = '0';
+			}
+			if (isset($validated['toque_accomp_3'])) {
+				$menu->toque_accomp_3 = '1';
+			} else {
+				$menu->toque_accomp_3 = '0';
+			}
+			if (isset($validated['ab_accomp_4'])) {
+				$menu->ab_accomp_4 = '1';
+			} else {
+				$menu->ab_accomp_4 = '0';
+			}
+			if (isset($validated['toque_accomp_4'])) {
+				$menu->toque_accomp_4 = '1';
+			} else {
+				$menu->toque_accomp_4 = '0';
+			}
 
-            if (isset($validated['ab_fromage1'])) {
-                $menu->ab_fromage1 = '1';
-            } else {
-                $menu->ab_fromage1 = '0';
-            }
-            if (isset($validated['europe_fromage1'])) {
-                $menu->europe_fromage1 = '1';
-            } else {
-                $menu->europe_fromage1 = '0';
-            }
-            if (isset($validated['ab_fromage2'])) {
-                $menu->ab_fromage2 = '1';
-            } else {
-                $menu->ab_fromage2 = '0';
-            }
-            if (isset($validated['europe_fromage2'])) {
-                $menu->europe_fromage2 = '1';
-            } else {
-                $menu->europe_fromage2 = '0';
-            }
-            if (isset($validated['ab_fromage3'])) {
-                $menu->ab_fromage3 = '1';
-            } else {
-                $menu->ab_fromage3 = '0';
-            }
-            if (isset($validated['europe_fromage3'])) {
-                $menu->europe_fromage3 = '1';
-            } else {
-                $menu->europe_fromage3 = '0';
-            }
-            if (isset($validated['ab_fromage4'])) {
-                $menu->ab_fromage4 = '1';
-            } else {
-                $menu->ab_fromage4 = '0';
-            }
-            if (isset($validated['europe_dessert4'])) {
-                $menu->europe_dessert4 = '1';
-            } else {
-                $menu->europe_dessert4 = '0';
-            }
+			if (isset($validated['ab_fromage_1'])) {
+				$menu->ab_fromage_1 = '1';
+			} else {
+				$menu->ab_fromage_1 = '0';
+			}
+			if (isset($validated['europe_fromage_1'])) {
+				$menu->europe_fromage_1 = '1';
+			} else {
+				$menu->europe_fromage_1 = '0';
+			}
+			if (isset($validated['ab_fromage_2'])) {
+				$menu->ab_fromage_2 = '1';
+			} else {
+				$menu->ab_fromage_2 = '0';
+			}
+			if (isset($validated['europe_fromage_2'])) {
+				$menu->europe_fromage_2 = '1';
+			} else {
+				$menu->europe_fromage_2 = '0';
+			}
+			if (isset($validated['ab_fromage_3'])) {
+				$menu->ab_fromage_3 = '1';
+			} else {
+				$menu->ab_fromage_3 = '0';
+			}
+			if (isset($validated['europe_fromage_3'])) {
+				$menu->europe_fromage_3 = '1';
+			} else {
+				$menu->europe_fromage_3 = '0';
+			}
+			if (isset($validated['ab_fromage_4'])) {
+				$menu->ab_fromage_4 = '1';
+			} else {
+				$menu->ab_fromage_4 = '0';
+			}
 
-            if (isset($validated['ab_dessert1'])) {
-                $menu->ab_dessert1 = '1';
-            } else {
-                $menu->ab_dessert1 = '0';
-            }
-            if (isset($validated['toque_dessert1'])) {
-                $menu->toque_dessert1 = '1';
-            } else {
-                $menu->toque_dessert1 = '0';
-            }
-            if (isset($validated['europe_dessert1'])) {
-                $menu->europe_dessert1 = '1';
-            } else {
-                $menu->europe_dessert1 = '0';
-            }
-            if (isset($validated['ab_dessert2'])) {
-                $menu->ab_dessert2 = '1';
-            } else {
-                $menu->ab_dessert2 = '0';
-            }
-            if (isset($validated['toque_dessert2'])) {
-                $menu->toque_dessert2 = '1';
-            } else {
-                $menu->toque_dessert2 = '0';
-            }
-            if (isset($validated['europe_dessert2'])) {
-                $menu->europe_dessert2 = '1';
-            } else {
-                $menu->europe_dessert2 = '0';
-            }
-            if (isset($validated['ab_dessert3'])) {
-                $menu->ab_dessert3 = '1';
-            } else {
-                $menu->ab_dessert3 = '0';
-            }
-            if (isset($validated['toque_dessert3'])) {
-                $menu->toque_dessert3 = '1';
-            } else {
-                $menu->toque_dessert3 = '0';
-            }
-            if (isset($validated['europe_dessert3'])) {
-                $menu->europe_dessert3 = '1';
-            } else {
-                $menu->europe_dessert3 = '0';
-            }
-            if (isset($validated['ab_dessert4'])) {
-                $menu->ab_dessert4 = '1';
-            } else {
-                $menu->ab_dessert4 = '0';
-            }
-            if (isset($validated['toque_dessert4'])) {
-                $menu->toque_dessert4 = '1';
-            } else {
-                $menu->toque_dessert4 = '0';
-            }
-            if (isset($validated['europe_dessert4'])) {
-                $menu->europe_dessert4 = '1';
-            } else {
-                $menu->europe_dessert4 = '0';
-            }
+			if (isset($validated['ab_dessert_1'])) {
+				$menu->ab_dessert_1 = '1';
+			} else {
+				$menu->ab_dessert_1 = '0';
+			}
+			if (isset($validated['toque_dessert_1'])) {
+				$menu->toque_dessert_1 = '1';
+			} else {
+				$menu->toque_dessert_1 = '0';
+			}
+			if (isset($validated['ab_dessert_2'])) {
+				$menu->ab_dessert_2 = '1';
+			} else {
+				$menu->ab_dessert_2 = '0';
+			}
+			if (isset($validated['toque_dessert_2'])) {
+				$menu->toque_dessert_2 = '1';
+			} else {
+				$menu->toque_dessert_2 = '0';
+			}
+			if (isset($validated['ab_dessert_3'])) {
+				$menu->ab_dessert_3 = '1';
+			} else {
+				$menu->ab_dessert_3 = '0';
+			}
+			if (isset($validated['toque_dessert_3'])) {
+				$menu->toque_dessert_3 = '1';
+			} else {
+				$menu->toque_dessert_3 = '0';
+			}
+			if (isset($validated['ab_dessert_4'])) {
+				$menu->ab_dessert_4 = '1';
+			} else {
+				$menu->ab_dessert_4 = '0';
+			}
+			if (isset($validated['toque_dessert_4'])) {
+				$menu->toque_dessert_4 = '1';
+			} else {
+				$menu->toque_dessert_4 = '0';
+			}
 
-            if (isset($validated['ab_fruit1'])) {
-                $menu->ab_fruit1 = '1';
-            } else {
-                $menu->ab_fruit1 = '0';
-            }
-            if (isset($validated['europe_fruit1'])) {
-                $menu->europe_fruit1 = '1';
-            } else {
-                $menu->europe_fruit1 = '0';
-            }
-            if (isset($validated['ab_fruit2'])) {
-                $menu->ab_fruit2 = '1';
-            } else {
-                $menu->ab_fruit2 = '0';
-            }
-            if (isset($validated['europe_fruit2'])) {
-                $menu->europe_fruit2 = '1';
-            } else {
-                $menu->europe_fruit2 = '0';
-            }
-            if (isset($validated['ab_fruit3'])) {
-                $menu->ab_fruit3 = '1';
-            } else {
-                $menu->ab_fruit3 = '0';
-            }
-            if (isset($validated['europe_fruit3'])) {
-                $menu->europe_fruit3 = '1';
-            } else {
-                $menu->europe_fruit3 = '0';
-            }
-            if (isset($validated['ab_fruit4'])) {
-                $menu->ab_fruit4 = '1';
-            } else {
-                $menu->ab_fruit4 = '0';
-            }
-            if (isset($validated['europe_fruit4'])) {
-                $menu->europe_fruit4 = '1';
-            } else {
-                $menu->europe_fruit4 = '0';
-            }
+			if (isset($validated['ab_fruit_1'])) {
+				$menu->ab_fruit_1 = '1';
+			} else {
+				$menu->ab_fruit_1 = '0';
+			}
+			if (isset($validated['europe_fruit_1'])) {
+				$menu->europe_fruit_1 = '1';
+			} else {
+				$menu->europe_fruit_1 = '0';
+			}
+			if (isset($validated['ab_fruit_2'])) {
+				$menu->ab_fruit_2 = '1';
+			} else {
+				$menu->ab_fruit_2 = '0';
+			}
+			if (isset($validated['europe_fruit_2'])) {
+				$menu->europe_fruit_2 = '1';
+			} else {
+				$menu->europe_fruit_2 = '0';
+			}
+			if (isset($validated['ab_fruit_3'])) {
+				$menu->ab_fruit_3 = '1';
+			} else {
+				$menu->ab_fruit_3 = '0';
+			}
+			if (isset($validated['europe_fruit_3'])) {
+				$menu->europe_fruit_3 = '1';
+			} else {
+				$menu->europe_fruit_3 = '0';
+			}
+			if (isset($validated['ab_fruit_4'])) {
+				$menu->ab_fruit_4 = '1';
+			} else {
+				$menu->ab_fruit_4 = '0';
+			}
+			if (isset($validated['europe_fruit_4'])) {
+				$menu->europe_fruit_4 = '1';
+			} else {
+				$menu->europe_fruit_4 = '0';
+			}
 
-            $menu->save();
-        } else {
-            return redirect()->back()->withErrors('update_fail');
-        }
-    }
+			$menu->save();
+		} else {
+			return redirect()->back()->withErrors('update_fail');
+		}
+	}
 }

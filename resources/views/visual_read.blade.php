@@ -71,40 +71,40 @@ $formattedDate = $formatter->format($date);
 
 						<span
 							class="labelMeal bioAgri
-						@if (isset($menu['ab_entree1']) && $menu['ab_entree1'] == 1) {{ 'display' }} 
+						@if (isset($menu['ab_entree_1']) && $menu['ab_entree_1'] == 1) {{ 'display' }} 
 						@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
 							class="labelMeal HandMade
-						@if (isset($menu['toque_entree1']) && $menu['toque_entree1'] == 1) {{ 'display' }} 
+						@if (isset($menu['toque_entree_1']) && $menu['toque_entree_1'] == 1) {{ 'display' }} 
 						@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['entree1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['entree_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_entree2']) && $menu['ab_entree2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_entree_2']) && $menu['ab_entree_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_entree2']) && $menu['toque_entree2'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_entree_2']) && $menu['toque_entree_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['entree2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['entree_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_entree3']) && $menu['ab_entree3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_entree_3']) && $menu['ab_entree_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_entree3']) && $menu['toque_entree3'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_entree_3']) && $menu['toque_entree_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['entree3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['entree_3'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY hide">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_entree4']) && $menu['ab_entree4'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_entree_4']) && $menu['ab_entree_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_entree4']) && $menu['toque_entree4'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_entree_4']) && $menu['toque_entree_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['entree4'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['entree_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>
@@ -121,39 +121,39 @@ $formattedDate = $formatter->format($date);
 				<div class="mealContent">
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_plat1']) && $menu['ab_plat1'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_plat_1']) && $menu['ab_plat_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_plat1']) && $menu['toque_plat1'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_plat_1']) && $menu['toque_plat_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['plat1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['plat_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_plat2']) && $menu['ab_plat2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_plat_2']) && $menu['ab_plat_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_plat2']) && $menu['toque_plat2'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_plat_2']) && $menu['toque_plat_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['plat2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['plat_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_plat3']) && $menu['ab_plat3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_plat_3']) && $menu['ab_plat_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_plat3']) && $menu['toque_plat3'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_plat_3']) && $menu['toque_plat_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['plat3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['plat_3'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY hide">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_plat4']) && $menu['ab_plat4'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_plat_4']) && $menu['ab_plat_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_plat4']) && $menu['toque_plat4'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_plat_4']) && $menu['toque_plat_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['plat4'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['plat_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>
@@ -170,30 +170,39 @@ $formattedDate = $formatter->format($date);
 				<div class="mealContent">
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_accomp1']) && $menu['ab_accomp1'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_accomp_1']) && $menu['ab_accomp_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_accomp1']) && $menu['toque_accomp1'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_accomp_1']) && $menu['toque_accomp_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['accomp1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['accomp_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_accomp2']) && $menu['ab_accomp2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_accomp_2']) && $menu['ab_accomp_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_accomp2']) && $menu['toque_accomp2'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_accomp_2']) && $menu['toque_accomp_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['accomp2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['accomp_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_accomp3']) && $menu['ab_accomp3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_accomp_3']) && $menu['ab_accomp_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_accomp3']) && $menu['toque_accomp3'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_accomp_3']) && $menu['toque_accomp_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['accomp3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['accomp_3'] ?? '' }} </h6>
+					</div>
+					<div class="mealItem XXLflexCenteredXY">
+						<span
+							class="labelMeal bioAgri @if (isset($menu['ab_accomp_4']) && $menu['ab_accomp_4'] == 1) {{ 'display' }} 
+					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
+						<span
+							class="labelMeal HandMade @if (isset($menu['toque_accomp_4']) && $menu['toque_accomp_4'] == 1) {{ 'display' }} 
+					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
+						<h6 class="mb07 fcIce"> {{ $menu['accomp_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>
@@ -210,39 +219,39 @@ $formattedDate = $formatter->format($date);
 				<div class="mealContent">
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fromage1']) && $menu['ab_fromage1'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fromage_1']) && $menu['ab_fromage_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['europe_fromage1']) && $menu['europe_fromage1'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fromage_1']) && $menu['europe_fromage_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fromage1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fromage_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fromage2']) && $menu['ab_fromage2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fromage_2']) && $menu['ab_fromage_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['europe_fromage2']) && $menu['europe_fromage2'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fromage_2']) && $menu['europe_fromage_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fromage2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fromage_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fromage3']) && $menu['ab_fromage3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fromage_3']) && $menu['ab_fromage_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['europe_fromage3']) && $menu['europe_fromage3'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fromage_3']) && $menu['europe_fromage_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fromage3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fromage_3'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY hide">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fromage4']) && $menu['ab_fromage4'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fromage_4']) && $menu['ab_fromage_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['europe_fromage4']) && $menu['europe_fromage4'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fromage_4']) && $menu['europe_fromage_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fromage4'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fromage_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>
@@ -259,51 +268,39 @@ $formattedDate = $formatter->format($date);
 				<div class="mealContent">
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_dessert1']) && $menu['ab_dessert1'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_dessert_1']) && $menu['ab_dessert_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_dessert1']) && $menu['toque_dessert1'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_dessert_1']) && $menu['toque_dessert_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<span
-							class="labelMeal Europe @if (isset($menu['europe_dessert1']) && $menu['europe_dessert1'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['dessert1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['dessert_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_dessert2']) && $menu['ab_dessert2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_dessert_2']) && $menu['ab_dessert_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_dessert2']) && $menu['toque_dessert2'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_dessert_2']) && $menu['toque_dessert_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<span
-							class="labelMeal Europe @if (isset($menu['europe_dessert2']) && $menu['europe_dessert2'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['dessert2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['dessert_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_dessert3']) && $menu['ab_dessert3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_dessert_3']) && $menu['ab_dessert_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_dessert3']) && $menu['toque_dessert3'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_dessert_3']) && $menu['toque_dessert_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<span
-							class="labelMeal Europe @if (isset($menu['europe_dessert3']) && $menu['europe_dessert3'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['dessert3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['dessert_3'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY hide">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_dessert4']) && $menu['ab_dessert4'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_dessert_4']) && $menu['ab_dessert_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal HandMade @if (isset($menu['toque_dessert4']) && $menu['toque_dessert4'] == 1) {{ 'display' }} 
+							class="labelMeal HandMade @if (isset($menu['toque_dessert_4']) && $menu['toque_dessert_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-						<span
-							class="labelMeal Europe @if (isset($menu['europe_dessert4']) && $menu['europe_dessert4'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['dessert4'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['dessert_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>
@@ -320,39 +317,39 @@ $formattedDate = $formatter->format($date);
 				<div class="mealContent">
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fruit1']) && $menu['ab_fruit1'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fruit_1']) && $menu['ab_fruit_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['toque_fruit1']) && $menu['toque_fruit1'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fruit_1']) && $menu['europe_fruit_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fruit1'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fruit_1'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fruit2']) && $menu['ab_fruit2'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fruit_2']) && $menu['ab_fruit_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['toque_fruit2']) && $menu['toque_fruit2'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fruit_2']) && $menu['europe_fruit_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fruit2'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fruit_2'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fruit3']) && $menu['ab_fruit3'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fruit_3']) && $menu['ab_fruit_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['toque_fruit3']) && $menu['toque_fruit3'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fruit_3']) && $menu['europe_fruit_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fruit3'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fruit_3'] ?? '' }} </h6>
 					</div>
 					<div class="mealItem XXLflexCenteredXY">
 						<span
-							class="labelMeal bioAgri @if (isset($menu['ab_fruit4']) && $menu['ab_fruit4'] == 1) {{ 'display' }} 
+							class="labelMeal bioAgri @if (isset($menu['ab_fruit_4']) && $menu['ab_fruit_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 						<span
-							class="labelMeal Europe @if (isset($menu['toque_fruit4']) && $menu['toque_fruit4'] == 1) {{ 'display' }} 
+							class="labelMeal Europe @if (isset($menu['europe_fruit_4']) && $menu['europe_fruit_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-						<h6 class="mb07 fcIce"> {{ $menu['fruit4'] ?? '' }} </h6>
+						<h6 class="mb07 fcIce"> {{ $menu['fruit_4'] ?? '' }} </h6>
 					</div>
 				</div>
 			</div>

@@ -148,80 +148,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE ENTREE -->
 							<!-- BEGINNING : ENTREE 1 -->
 							<div class="menuPrompt pt1">
-								<label for="entree1" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_1" class="uc XXLfw600 pl07 mb07">
 									Entrée 1
 								</label>
 								<div>
-									<input type="text" name="entree1" id="entree1"
-										value="{{ isset($_POST['entree1']) ? old('entree1', $_POST['entree1']) : old('entree1') }}"
+									<input type="text" name="entree_1" id="entree_1"
+										value="{{ isset($_POST['entree_1']) ? old('entree_1', $_POST['entree_1']) : old('entree_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree1" name="ab_entree1" value="1"
-											@if ((isset($_POST['ab_entree1']) && $_POST['ab_entree1'] == 1) || old('ab_entree1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree1" name="toque_entree1" value="1"
-											@if ((isset($_POST['toque_entree1']) && $_POST['toque_entree1'] == 1) || old('toque_entree1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_1" name="ab_entree_1" value="1"
+											@if ((isset($_POST['ab_entree_1']) && $_POST['ab_entree_1'] == 1) || old('ab_entree_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_1" name="toque_entree_1" value="1"
+											@if ((isset($_POST['toque_entree_1']) && $_POST['toque_entree_1'] == 1) || old('toque_entree_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 1 -->
 							<!-- BEGINNING : ENTREE 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree2" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_2" class="uc XXLfw600 pl07 mb07">
 									Entrée 2
 								</label>
 								<div>
-									<input type="text" name="entree2" id="entree2"
-										value="{{ isset($_POST['entree2']) ? old('entree2', $_POST['entree2']) : old('entree2') }}"
+									<input type="text" name="entree_2" id="entree_2"
+										value="{{ isset($_POST['entree_2']) ? old('entree_2', $_POST['entree_2']) : old('entree_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree2" name="ab_entree2" value="1"
-											@if ((isset($_POST['ab_entree2']) && $_POST['ab_entree2'] == 1) || old('ab_entree2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree2" name="toque_entree2" value="1"
-											@if ((isset($_POST['toque_entree2']) && $_POST['toque_entree2'] == 1) || old('toque_entree2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_2" name="ab_entree_2" value="1"
+											@if ((isset($_POST['ab_entree_2']) && $_POST['ab_entree_2'] == 1) || old('ab_entree_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_2" name="toque_entree_2" value="1"
+											@if ((isset($_POST['toque_entree_2']) && $_POST['toque_entree_2'] == 1) || old('toque_entree_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 2 -->
 							<!-- BEGINNING : ENTREE 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree3" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_3" class="uc XXLfw600 pl07 mb07">
 									Entrée 3
 								</label>
 								<div>
-									<input type="text" name="entree3" id="entree3"
-										value="{{ isset($_POST['entree3']) ? old('entree3', $_POST['entree3']) : old('entree3') }}"
+									<input type="text" name="entree_3" id="entree_3"
+										value="{{ isset($_POST['entree_3']) ? old('entree_3', $_POST['entree_3']) : old('entree_3') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree3" name="ab_entree3" value="1"
-											@if ((isset($_POST['ab_entree3']) && $_POST['ab_entree3'] == 1) || old('ab_entree3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_entree3" name="toque_entree3" value="1"
-											@if ((isset($_POST['toque_entree3']) && $_POST['toque_entree3'] == 1) || old('toque_entree3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_3" name="ab_entree_3" value="1"
+											@if ((isset($_POST['ab_entree_3']) && $_POST['ab_entree_3'] == 1) || old('ab_entree_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_3" name="toque_entree_3" value="1"
+											@if ((isset($_POST['toque_entree_3']) && $_POST['toque_entree_3'] == 1) || old('toque_entree_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ENTREE 3 -->
 							<!-- BEGINNING : ENTREE 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="entree4" class="uc XXLfw600 pl07 mb07">
+								<label for="entree_4" class="uc XXLfw600 pl07 mb07">
 									Entrée 4
 								</label>
 								<div>
-									<input type="text" name="entree4" id="entree4"
-										value="{{ isset($_POST['entree4']) ? old('entree4', $_POST['entree4']) : old('entree4') }}"
+									<input type="text" name="entree_4" id="entree_4"
+										value="{{ isset($_POST['entree_4']) ? old('entree_4', $_POST['entree_4']) : old('entree_4') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_entree4" name="ab_entree4" value="1"
-											@if ((isset($_POST['ab_entree4']) && $_POST['ab_entree4'] == 1) || old('ab_entree4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input id="toque_entree4" name="toque_entree4" value="1" class="checkboxHandMade" type="checkbox"
-											@if ((isset($_POST['toque_entree4']) && $_POST['toque_entree4'] == 1) || old('toque_entree4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_entree_4" name="ab_entree_4" value="1"
+											@if ((isset($_POST['ab_entree_4']) && $_POST['ab_entree_4'] == 1) || old('ab_entree_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input id="toque_entree_4" name="toque_entree_4" value="1" class="checkboxHandMade" type="checkbox"
+											@if ((isset($_POST['toque_entree_4']) && $_POST['toque_entree_4'] == 1) || old('toque_entree_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -244,80 +244,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE PLAT -->
 							<!-- BEGINNING : PLAT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="plat1" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_1" class="uc XXLfw600 pl07 mb07">
 									Plat 1
 								</label>
 								<div>
-									<input type="text" name="plat1" id="plat1"
-										value="{{ isset($_POST['plat1']) ? old('plat1', $_POST['plat1']) : old('plat1') }}"
+									<input type="text" name="plat_1" id="plat_1"
+										value="{{ isset($_POST['plat_1']) ? old('plat_1', $_POST['plat_1']) : old('plat_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat1" name="ab_plat1" value="1"
-											@if ((isset($_POST['ab_plat1']) && $_POST['ab_plat1'] == 1) || old('ab_plat1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat1" name="toque_plat1" value="1"
-											@if ((isset($_POST['toque_plat1']) && $_POST['toque_plat1'] == 1) || old('toque_plat1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_1" name="ab_plat_1" value="1"
+											@if ((isset($_POST['ab_plat_1']) && $_POST['ab_plat_1'] == 1) || old('ab_plat_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_1" name="toque_plat_1" value="1"
+											@if ((isset($_POST['toque_plat_1']) && $_POST['toque_plat_1'] == 1) || old('toque_plat_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: PLAT 1 -->
 							<!-- BEGINNING : PLAT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat2" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_2" class="uc XXLfw600 pl07 mb07">
 									Plat 2
 								</label>
 								<div>
-									<input type="text" name="plat2" id="plat2"
-										value="{{ isset($_POST['plat2']) ? old('plat2', $_POST['plat2']) : old('plat2') }}"
+									<input type="text" name="plat_2" id="plat_2"
+										value="{{ isset($_POST['plat_2']) ? old('plat_2', $_POST['plat_2']) : old('plat_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat2" name="ab_plat2" value="1"
-											@if ((isset($_POST['ab_plat2']) && $_POST['ab_plat2'] == 1) || old('ab_plat2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat2" name="toque_plat2" value="1"
-											@if ((isset($_POST['toque_plat2']) && $_POST['toque_plat2'] == 1) || old('toque_plat2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_2" name="ab_plat_2" value="1"
+											@if ((isset($_POST['ab_plat_2']) && $_POST['ab_plat_2'] == 1) || old('ab_plat_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_2" name="toque_plat_2" value="1"
+											@if ((isset($_POST['toque_plat_2']) && $_POST['toque_plat_2'] == 1) || old('toque_plat_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : PLAT 2 -->
 							<!-- BEGINNING : PLAT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat3" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_3" class="uc XXLfw600 pl07 mb07">
 									Plat 3
 								</label>
 								<div>
-									<input type="text" name="plat3" id="plat3"
-										value="{{ isset($_POST['plat3']) ? old('plat3', $_POST['plat3']) : old('plat3') }}"
+									<input type="text" name="plat_3" id="plat_3"
+										value="{{ isset($_POST['plat_3']) ? old('plat_3', $_POST['plat_3']) : old('plat_3') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat3" name="ab_plat3" value="1"
-											@if ((isset($_POST['ab_plat3']) && $_POST['ab_plat3'] == 1) || old('ab_plat3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat3" name="toque_plat3" value="1"
-											@if ((isset($_POST['toque_plat3']) && $_POST['toque_plat3'] == 1) || old('toque_plat3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_3" name="ab_plat_3" value="1"
+											@if ((isset($_POST['ab_plat_3']) && $_POST['ab_plat_3'] == 1) || old('ab_plat_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_3" name="toque_plat_3" value="1"
+											@if ((isset($_POST['toque_plat_3']) && $_POST['toque_plat_3'] == 1) || old('toque_plat_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : PLAT 3 -->
 							<!-- BEGINNING : PLAT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="plat4" class="uc XXLfw600 pl07 mb07">
+								<label for="plat_4" class="uc XXLfw600 pl07 mb07">
 									Plat 4
 								</label>
 								<div>
-									<input type="text" name="plat4" id="plat4"
-										value="{{ isset($_POST['plat4']) ? old('plat4', $_POST['plat4']) : old('plat4') }}"
+									<input type="text" name="plat_4" id="plat_4"
+										value="{{ isset($_POST['plat_4']) ? old('plat_4', $_POST['plat_4']) : old('plat_4') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_plat4" name="ab_plat4" value="1"
-											@if ((isset($_POST['ab_plat4']) && $_POST['ab_plat4'] == 1) || old('ab_plat4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_plat4" name="toque_plat4" value="1"
-											@if ((isset($_POST['toque_plat4']) && $_POST['toque_plat4'] == 1) || old('toque_plat4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_plat_4" name="ab_plat_4" value="1"
+											@if ((isset($_POST['ab_plat_4']) && $_POST['ab_plat_4'] == 1) || old('ab_plat_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_4" name="toque_plat_4" value="1"
+											@if ((isset($_POST['toque_plat_4']) && $_POST['toque_plat_4'] == 1) || old('toque_plat_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -340,64 +340,84 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE ACCOMPAGNEMENT -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="accomp1" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_1" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 1
 								</label>
 								<div>
-									<input type="text" name="accomp1" id="accomp1"
-										value="{{ isset($_POST['accomp1']) ? old('accomp1', $_POST['accomp1']) : old('accomp1') }}"
+									<input type="text" name="accomp_1" id="accomp_1"
+										value="{{ isset($_POST['accomp_1']) ? old('accomp_1', $_POST['accomp_1']) : old('accomp_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp1" name="ab_accomp1" value="1"
-											@if ((isset($_POST['ab_accomp1']) && $_POST['ab_accomp1'] == 1) || old('ab_accomp1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp1" name="toque_accomp1" value="1"
-											@if ((isset($_POST['toque_accomp1']) && $_POST['toque_accomp1'] == 1) || old('toque_accomp1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_1" name="ab_accomp_1" value="1"
+											@if ((isset($_POST['ab_accomp_1']) && $_POST['ab_accomp_1'] == 1) || old('ab_accomp_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_1" name="toque_accomp_1" value="1"
+											@if ((isset($_POST['toque_accomp_1']) && $_POST['toque_accomp_1'] == 1) || old('toque_accomp_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 1 -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="accomp2" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_2" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 2
 								</label>
 								<div>
-									<input type="text" name="accomp2" id="accomp2"
-										value="{{ isset($_POST['accomp2']) ? old('accomp2', $_POST['accomp2']) : old('accomp2') }}"
+									<input type="text" name="accomp_2" id="accomp_2"
+										value="{{ isset($_POST['accomp_2']) ? old('accomp_2', $_POST['accomp_2']) : old('accomp_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp2" name="ab_accomp2" value="1"
-											@if ((isset($_POST['ab_accomp2']) && $_POST['ab_accomp2'] == 1) || old('ab_accomp2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp2" name="toque_accomp2" value="1"
-											@if ((isset($_POST['toque_accomp2']) && $_POST['toque_accomp2'] == 1) || old('toque_accomp2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_2" name="ab_accomp_2" value="1"
+											@if ((isset($_POST['ab_accomp_2']) && $_POST['ab_accomp_2'] == 1) || old('ab_accomp_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_2" name="toque_accomp_2" value="1"
+											@if ((isset($_POST['toque_accomp_2']) && $_POST['toque_accomp_2'] == 1) || old('toque_accomp_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 2 -->
 							<!-- BEGINNING : ACCOMPAGNEMENT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="accomp3" class="uc XXLfw600 pl07 mb07">
+								<label for="accomp_3" class="uc XXLfw600 pl07 mb07">
 									Accompagnement 3
 								</label>
 								<div>
-									<input type="text" name="accomp3" id="accomp3"
-										value="{{ isset($_POST['accomp3']) ? old('accomp3', $_POST['accomp3']) : old('accomp3') }}" type="text"
-										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
+									<input type="text" name="accomp_3" id="accomp_3"
+										value="{{ isset($_POST['accomp_3']) ? old('accomp_3', $_POST['accomp_3']) : old('accomp_3') }}"
+										type="text" class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_accomp3" name="ab_accomp3" value="1"
-											@if ((isset($_POST['ab_accomp3']) && $_POST['ab_accomp3'] == 1) || old('ab_accomp3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_accomp3" name="toque_accomp3" value="1"
-											@if ((isset($_POST['toque_accomp3']) && $_POST['toque_accomp3'] == 1) || old('toque_accomp3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_3" name="ab_accomp_3" value="1"
+											@if ((isset($_POST['ab_accomp_3']) && $_POST['ab_accomp_3'] == 1) || old('ab_accomp_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_3" name="toque_accomp_3" value="1"
+											@if ((isset($_POST['toque_accomp_3']) && $_POST['toque_accomp_3'] == 1) || old('toque_accomp_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : ACCOMPAGNEMENT 3 -->
+							<!-- BEGINNING : ACCOMPAGNEMENT 4 -->
+							<div class="menuPrompt XXLsepIce80 pt1">
+								<label for="accomp_4" class="uc XXLfw600 pl07 mb07">
+									Accompagnement 4
+								</label>
+								<div>
+									<input type="text" name="accomp_4" id="accomp_4"
+										value="{{ isset($_POST['accomp_4']) ? old('accomp_4', $_POST['accomp_4']) : old('accomp_4') }}"
+										type="text" class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
+									<div class="mb1">
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_accomp_4" name="ab_accomp_4" value="1"
+											@if ((isset($_POST['ab_accomp_4']) && $_POST['ab_accomp_4'] == 1) || old('ab_accomp_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_4" name="toque_accomp_4" value="1"
+											@if ((isset($_POST['toque_accomp_4']) && $_POST['toque_accomp_4'] == 1) || old('toque_accomp_4')) checked @endif />
+									</div>
+								</div>
+							</div>
+							<!-- END : ACCOMPAGNEMENT 4 -->
 						</div>
 						<!-- END : ACCOMPAGNEMENT -->
 						<!-- BEGINNING : FROMAGE -->
@@ -416,80 +436,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE FROMAGE -->
 							<!-- BEGINNING : FROMAGE 1 -->
 							<div class="menuPrompt pt1">
-								<label for="fromage1" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_1" class="uc XXLfw600 pl07 mb07">
 									fromage 1
 								</label>
 								<div>
-									<input type="text" name="fromage1" id="fromage1"
-										value="{{ isset($_POST['fromage1']) ? old('fromage1', $_POST['fromage1']) : old('fromage1') }}"
+									<input type="text" name="fromage_1" id="fromage_1"
+										value="{{ isset($_POST['fromage_1']) ? old('fromage_1', $_POST['fromage_1']) : old('fromage_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage1" name="ab_fromage1" value="1"
-											@if ((isset($_POST['ab_fromage1']) && $_POST['ab_fromage1'] == 1) || old('ab_fromage1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage1" name="europe_fromage1" value="1"
-											@if ((isset($_POST['europe_fromage1']) && $_POST['europe_fromage1'] == 1) || old('europe_fromage1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_1" name="ab_fromage_1" value="1"
+											@if ((isset($_POST['ab_fromage_1']) && $_POST['ab_fromage_1'] == 1) || old('ab_fromage_1')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_1" name="europe_fromage_1"
+											value="1" @if ((isset($_POST['europe_fromage_1']) && $_POST['europe_fromage_1'] == 1) || old('europe_fromage_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 1 -->
 							<!-- BEGINNING : FROMAGE 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage2" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_2" class="uc XXLfw600 pl07 mb07">
 									fromage 2
 								</label>
 								<div>
-									<input type="text" name="fromage2" id="fromage2"
-										value="{{ isset($_POST['fromage2']) ? old('fromage2', $_POST['fromage2']) : old('fromage2') }}"
+									<input type="text" name="fromage_2" id="fromage_2"
+										value="{{ isset($_POST['fromage_2']) ? old('fromage_2', $_POST['fromage_2']) : old('fromage_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage2" name="ab_fromage2" value="1"
-											@if ((isset($_POST['ab_fromage2']) && $_POST['ab_fromage2'] == 1) || old('ab_fromage2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage2" name="europe_fromage2" value="1"
-											@if ((isset($_POST['europe_fromage2']) && $_POST['europe_fromage2'] == 1) || old('europe_fromage2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_2" name="ab_fromage_2" value="1"
+											@if ((isset($_POST['ab_fromage_2']) && $_POST['ab_fromage_2'] == 1) || old('ab_fromage_2')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_2" name="europe_fromage_2"
+											value="1" @if ((isset($_POST['europe_fromage_2']) && $_POST['europe_fromage_2'] == 1) || old('europe_fromage_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 2 -->
 							<!-- BEGINNING : FROMAGE 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage3" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_3" class="uc XXLfw600 pl07 mb07">
 									fromage 3
 								</label>
 								<div>
-									<input type="text" name="fromage3" id="fromage3"
-										value="{{ isset($_POST['fromage3']) ? old('fromage3', $_POST['fromage3']) : old('fromage3') }}"
+									<input type="text" name="fromage_3" id="fromage_3"
+										value="{{ isset($_POST['fromage_3']) ? old('fromage_3', $_POST['fromage_3']) : old('fromage_3') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage3" name="ab_fromage3" value="1"
-											@if ((isset($_POST['ab_fromage3']) && $_POST['ab_fromage3'] == 1) || old('ab_fromage3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage3" name="europe_fromage3" value="1"
-											@if ((isset($_POST['europe_fromage3']) && $_POST['europe_fromage3'] == 1) || old('europe_fromage3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_3" name="ab_fromage_3" value="1"
+											@if ((isset($_POST['ab_fromage_3']) && $_POST['ab_fromage_3'] == 1) || old('ab_fromage_3')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_3" name="europe_fromage_3"
+											value="1" @if ((isset($_POST['europe_fromage_3']) && $_POST['europe_fromage_3'] == 1) || old('europe_fromage_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END: FROMAGE 3 -->
 							<!-- BEGINNING : FROMAGE 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fromage4" class="uc XXLfw600 pl07 mb07">
+								<label for="fromage_4" class="uc XXLfw600 pl07 mb07">
 									fromage 4
 								</label>
 								<div>
-									<input type="text" name="fromage4" id="fromage4"
-										value="{{ isset($_POST['fromage4']) ? old('fromage4', $_POST['fromage4']) : old('fromage4') }}"
+									<input type="text" name="fromage_4" id="fromage_4"
+										value="{{ isset($_POST['fromage_4']) ? old('fromage_4', $_POST['fromage_4']) : old('fromage_4') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fromage4" name="ab_fromage4" value="1"
-											@if ((isset($_POST['ab_fromage4']) && $_POST['ab_fromage4'] == 1) || old('ab_fromage4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fromage4" name="europe_fromage4" value="1"
-											@if ((isset($_POST['europe_fromage4']) && $_POST['europe_fromage4'] == 1) || old('europe_fromage4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fromage_4" name="ab_fromage_4" value="1"
+											@if ((isset($_POST['ab_fromage_4']) && $_POST['ab_fromage_4'] == 1) || old('ab_fromage_4')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fromage_4" name="europe_fromage_4"
+											value="1" @if ((isset($_POST['europe_fromage_4']) && $_POST['europe_fromage_4'] == 1) || old('europe_fromage_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -512,92 +532,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE DESSERT -->
 							<!-- BEGINNING : DESSERT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="dessert1" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_1" class="uc XXLfw600 pl07 mb07">
 									Dessert 1
 								</label>
 								<div>
-									<input type="text" name="dessert1" id="dessert1"
-										value="{{ isset($_POST['dessert1']) ? old('dessert1', $_POST['dessert1']) : old('dessert1') }}"
+									<input type="text" name="dessert_1" id="dessert_1"
+										value="{{ isset($_POST['dessert_1']) ? old('dessert_1', $_POST['dessert_1']) : old('dessert_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert1" name="ab_dessert1" value="1"
-											@if ((isset($_POST['ab_dessert1']) && $_POST['ab_dessert1'] == 1) || old('ab_dessert1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert1" name="toque_dessert1" value="1"
-											@if ((isset($_POST['toque_dessert1']) && $_POST['toque_dessert1'] == 1) || old('toque_dessert1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert1" name="europe_dessert1" value="1"
-											@if ((isset($_POST['europe_dessert1']) && $_POST['europe_dessert1'] == 1) || old('europe_dessert1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_1" name="ab_dessert_1" value="1"
+											@if ((isset($_POST['ab_dessert_1']) && $_POST['ab_dessert_1'] == 1) || old('ab_dessert_1')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_1" name="toque_dessert_1"
+											value="1" @if ((isset($_POST['toque_dessert_1']) && $_POST['toque_dessert_1'] == 1) || old('toque_dessert_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 1 -->
 							<!-- BEGINNING : DESSERT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert2" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_2" class="uc XXLfw600 pl07 mb07">
 									Dessert 2
 								</label>
 								<div>
-									<input type="text" name="dessert2" id="dessert2"
-										value="{{ isset($_POST['dessert2']) ? old('dessert2', $_POST['dessert2']) : old('dessert2') }}"
+									<input type="text" name="dessert_2" id="dessert_2"
+										value="{{ isset($_POST['dessert_2']) ? old('dessert_2', $_POST['dessert_2']) : old('dessert_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert2" name="ab_dessert2" value="1"
-											@if ((isset($_POST['ab_dessert2']) && $_POST['ab_dessert2'] == 1) || old('ab_dessert2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert2" name="toque_dessert2" value="1"
-											@if ((isset($_POST['toque_dessert2']) && $_POST['toque_dessert2'] == 1) || old('toque_dessert2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert2" name="europe_dessert2" value="1"
-											@if ((isset($_POST['europe_dessert2']) && $_POST['europe_dessert2'] == 1) || old('europe_dessert2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_2" name="ab_dessert_2" value="1"
+											@if ((isset($_POST['ab_dessert_2']) && $_POST['ab_dessert_2'] == 1) || old('ab_dessert_2')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_2" name="toque_dessert_2"
+											value="1" @if ((isset($_POST['toque_dessert_2']) && $_POST['toque_dessert_2'] == 1) || old('toque_dessert_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 2 -->
 							<!-- BEGINNING : DESSERT 3 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert3" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_3" class="uc XXLfw600 pl07 mb07">
 									Dessert 3
 								</label>
 								<div>
-									<input type="text" name="dessert3" id="dessert3"
-										value="{{ isset($_POST['dessert3']) ? old('dessert3', $_POST['dessert3']) : old('dessert3') }}"
+									<input type="text" name="dessert_3" id="dessert_3"
+										value="{{ isset($_POST['dessert_3']) ? old('dessert_3', $_POST['dessert_3']) : old('dessert_3') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert3" name="ab_dessert3" value="1"
-											@if ((isset($_POST['ab_dessert3']) && $_POST['ab_dessert3'] == 1) || old('ab_dessert3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert3" name="toque_dessert3" value="1"
-											@if ((isset($_POST['toque_dessert3']) && $_POST['toque_dessert3'] == 1) || old('toque_dessert3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert3" name="europe_dessert3" value="1"
-											@if ((isset($_POST['europe_dessert3']) && $_POST['europe_dessert3'] == 1) || old('europe_dessert3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_3" name="ab_dessert_3" value="1"
+											@if ((isset($_POST['ab_dessert_3']) && $_POST['ab_dessert_3'] == 1) || old('ab_dessert_3')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_3" name="toque_dessert_3"
+											value="1" @if ((isset($_POST['toque_dessert_3']) && $_POST['toque_dessert_3'] == 1) || old('toque_dessert_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : DESSERT 3 -->
 							<!-- BEGINNING : DESSERT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="dessert4" class="uc XXLfw600 pl07 mb07">
+								<label for="dessert_4" class="uc XXLfw600 pl07 mb07">
 									Dessert 4
 								</label>
 								<div>
-									<input type="text" name="dessert4" id="dessert4"
-										value="{{ isset($_POST['dessert4']) ? old('dessert4', $_POST['dessert4']) : old('dessert4') }}"
+									<input type="text" name="dessert_4" id="dessert_4"
+										value="{{ isset($_POST['dessert_4']) ? old('dessert_4', $_POST['dessert_4']) : old('dessert_4') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_dessert4" name="ab_dessert4" value="1"
-											@if ((isset($_POST['ab_dessert4']) && $_POST['ab_dessert4'] == 1) || old('ab_dessert4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="checkboxHandMade" type="checkbox" id="toque_dessert4" name="toque_dessert4" value="1"
-											@if ((isset($_POST['toque_dessert4']) && $_POST['toque_dessert4'] == 1) || old('toque_dessert4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_dessert4" name="europe_dessert4" value="1"
-											@if ((isset($_POST['europe_dessert4']) && $_POST['europe_dessert4'] == 1) || old('europe_dessert4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_dessert_4" name="ab_dessert_4" value="1"
+											@if ((isset($_POST['ab_dessert_4']) && $_POST['ab_dessert_4'] == 1) || old('ab_dessert_4')) checked @endif />
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_4" name="toque_dessert_4"
+											value="1" @if ((isset($_POST['toque_dessert_4']) && $_POST['toque_dessert_4'] == 1) || old('toque_dessert_4')) checked @endif />
 									</div>
 								</div>
 							</div>
@@ -620,80 +628,80 @@ $formattedDate = $formatter->format($date);
 							<!-- END : TITLE FRUIT -->
 							<!-- BEGINNING : FRUIT 1 -->
 							<div class="menuPrompt pt1">
-								<label for="fruit1" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_1" class="uc XXLfw600 pl07 mb07">
 									Fruit 1
 								</label>
 								<div>
-									<input type="text" name="fruit1" id="fruit1"
-										value="{{ isset($_POST['fruit1']) ? old('fruit1', $_POST['fruit1']) : old('fruit1') }}"
+									<input type="text" name="fruit_1" id="fruit_1"
+										value="{{ isset($_POST['fruit_1']) ? old('fruit_1', $_POST['fruit_1']) : old('fruit_1') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit1" name="ab_fruit1" value="1"
-											@if ((isset($_POST['ab_fruit1']) && $_POST['ab_fruit1'] == 1) || old('ab_fruit1')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit1" name="europe_fruit1" value="1"
-											@if ((isset($_POST['europe_fruit1']) && $_POST['europe_fruit1'] == 1) || old('europe_fruit1')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_1" name="ab_fruit_1" value="1"
+											@if ((isset($_POST['ab_fruit_1']) && $_POST['ab_fruit_1'] == 1) || old('ab_fruit_1')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_1" name="europe_fruit_1" value="1"
+											@if ((isset($_POST['europe_fruit_1']) && $_POST['europe_fruit_1'] == 1) || old('europe_fruit_1')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 1 -->
 							<!-- BEGINNING : FRUIT 2 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fruit2" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_2" class="uc XXLfw600 pl07 mb07">
 									Fruit 2
 								</label>
 								<div>
-									<input type="text" name="fruit2" id="fruit2"
-										value="{{ isset($_POST['fruit2']) ? old('fruit2', $_POST['fruit2']) : old('fruit2') }}"
+									<input type="text" name="fruit_2" id="fruit_2"
+										value="{{ isset($_POST['fruit_2']) ? old('fruit_2', $_POST['fruit_2']) : old('fruit_2') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit2" name="ab_fruit2" value="1"
-											@if ((isset($_POST['ab_fruit2']) && $_POST['ab_fruit2'] == 1) || old('ab_fruit2')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit2" name="europe_fruit2" value="1"
-											@if ((isset($_POST['europe_fruit2']) && $_POST['europe_fruit2'] == 1) || old('europe_fruit2')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_2" name="ab_fruit_2" value="1"
+											@if ((isset($_POST['ab_fruit_2']) && $_POST['ab_fruit_2'] == 1) || old('ab_fruit_2')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_2" name="europe_fruit_2" value="1"
+											@if ((isset($_POST['europe_fruit_2']) && $_POST['europe_fruit_2'] == 1) || old('europe_fruit_2')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 2 -->
 							<!-- BEGINNING : FRUIT 3 -->
 							<div class="menuPrompt pt1">
-								<label for="fruit3" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_3" class="uc XXLfw600 pl07 mb07">
 									Fruit 1
 								</label>
 								<div>
-									<input type="text" name="fruit3" id="fruit3"
-										value="{{ isset($_POST['fruit3']) ? old('fruit3', $_POST['fruit3']) : old('fruit3') }}"
+									<input type="text" name="fruit_3" id="fruit_3"
+										value="{{ isset($_POST['fruit_3']) ? old('fruit_3', $_POST['fruit_3']) : old('fruit_3') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit3" name="ab_fruit3" value="1"
-											@if ((isset($_POST['ab_fruit3']) && $_POST['ab_fruit3'] == 1) || old('ab_fruit3')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit3" name="europe_fruit3" value="1"
-											@if ((isset($_POST['europe_fruit3']) && $_POST['europe_fruit3'] == 1) || old('europe_fruit3')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_3" name="ab_fruit_3" value="1"
+											@if ((isset($_POST['ab_fruit_3']) && $_POST['ab_fruit_3'] == 1) || old('ab_fruit_3')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_3" name="europe_fruit_3" value="1"
+											@if ((isset($_POST['europe_fruit_3']) && $_POST['europe_fruit_3'] == 1) || old('europe_fruit_3')) checked @endif />
 									</div>
 								</div>
 							</div>
 							<!-- END : FRUIT 3 -->
 							<!-- BEGINNING : FRUIT 4 -->
 							<div class="menuPrompt XXLsepIce80 pt1">
-								<label for="fruit4" class="uc XXLfw600 pl07 mb07">
+								<label for="fruit_4" class="uc XXLfw600 pl07 mb07">
 									Fruit 2
 								</label>
 								<div>
-									<input type="text" name="fruit4" id="fruit4"
-										value="{{ isset($_POST['fruit4']) ? old('fruit4', $_POST['fruit4']) : old('fruit4') }}"
+									<input type="text" name="fruit_4" id="fruit_4"
+										value="{{ isset($_POST['fruit_4']) ? old('fruit_4', $_POST['fruit_4']) : old('fruit_4') }}"
 										class="XXLw-100 pr1 borderBox XXLBordNone XXLbr20 textMenu mb1">
 									<div class="mb1">
-										<span class="checkboxAB XXLbr50 mb1 mr07"></span>
-										<input class="checkboxAB" type="checkbox" id="ab_fruit4" name="ab_fruit4" value="1"
-											@if ((isset($_POST['ab_fruit4']) && $_POST['ab_fruit4'] == 1) || old('ab_fruit4')) checked @endif />
-										<span class="checkboxEurope XXLbr50 mb1 mr07"></span>
-										<input class="checkboxEurope" type="checkbox" id="europe_fruit4" name="europe_fruit4" value="1"
-											@if ((isset($_POST['europe_fruit4']) && $_POST['europe_fruit4'] == 1) || old('europe_fruit4')) checked @endif />
+										<span class="iconAB XXLbr50 mb1 mr07"></span>
+										<input class="checkboxAB" type="checkbox" id="ab_fruit_4" name="ab_fruit_4" value="1"
+											@if ((isset($_POST['ab_fruit_4']) && $_POST['ab_fruit_4'] == 1) || old('ab_fruit_4')) checked @endif />
+										<span class="iconEurope XXLbr50 mb1 mr07"></span>
+										<input class="checkboxEurope" type="checkbox" id="europe_fruit_4" name="europe_fruit_4" value="1"
+											@if ((isset($_POST['europe_fruit_4']) && $_POST['europe_fruit_4'] == 1) || old('europe_fruit_4')) checked @endif />
 									</div>
 								</div>
 							</div>

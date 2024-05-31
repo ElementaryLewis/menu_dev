@@ -67,40 +67,40 @@ $formattedDate = $formatter->format($date);
 
 					<span
 						class="labelMeal bioAgri
-						@if (isset($_POST['ab_entree1']) && $_POST['ab_entree1'] == 1) {{ 'display' }} 
+						@if (isset($_POST['ab_entree_1']) && $_POST['ab_entree_1'] == 1) {{ 'display' }} 
 						@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
 						class="labelMeal HandMade
-						@if (isset($_POST['toque_entree1']) && $_POST['toque_entree1'] == 1) {{ 'display' }} 
+						@if (isset($_POST['toque_entree_1']) && $_POST['toque_entree_1'] == 1) {{ 'display' }} 
 						@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['entree1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['entree_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_entree2']) && $_POST['ab_entree2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_entree_2']) && $_POST['ab_entree_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_entree2']) && $_POST['toque_entree2'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_entree_2']) && $_POST['toque_entree_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['entree2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['entree_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_entree3']) && $_POST['ab_entree3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_entree_3']) && $_POST['ab_entree_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_entree3']) && $_POST['toque_entree3'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_entree_3']) && $_POST['toque_entree_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['entree3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['entree_3'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY hide">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_entree4']) && $_POST['ab_entree4'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_entree_4']) && $_POST['ab_entree_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_entree4']) && $_POST['toque_entree4'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_entree_4']) && $_POST['toque_entree_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['entree4'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['entree_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>
@@ -117,39 +117,39 @@ $formattedDate = $formatter->format($date);
 			<div class="mealContent">
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_plat1']) && $_POST['ab_plat1'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_plat_1']) && $_POST['ab_plat_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_plat1']) && $_POST['toque_plat1'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_plat_1']) && $_POST['toque_plat_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['plat1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['plat_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_plat2']) && $_POST['ab_plat2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_plat_2']) && $_POST['ab_plat_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_plat2']) && $_POST['toque_plat2'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_plat_2']) && $_POST['toque_plat_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['plat2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['plat_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_plat3']) && $_POST['ab_plat3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_plat_3']) && $_POST['ab_plat_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_plat3']) && $_POST['toque_plat3'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_plat_3']) && $_POST['toque_plat_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['plat3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['plat_3'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY hide">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_plat4']) && $_POST['ab_plat4'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_plat_4']) && $_POST['ab_plat_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_plat4']) && $_POST['toque_plat4'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_plat_4']) && $_POST['toque_plat_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['plat4'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['plat_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>
@@ -166,30 +166,39 @@ $formattedDate = $formatter->format($date);
 			<div class="mealContent">
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_accomp1']) && $_POST['ab_accomp1'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_accomp_1']) && $_POST['ab_accomp_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_accomp1']) && $_POST['toque_accomp1'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_accomp_1']) && $_POST['toque_accomp_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['accomp1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['accomp_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_accomp2']) && $_POST['ab_accomp2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_accomp_2']) && $_POST['ab_accomp_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_accomp2']) && $_POST['toque_accomp2'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_accomp_2']) && $_POST['toque_accomp_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['accomp2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['accomp_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_accomp3']) && $_POST['ab_accomp3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_accomp_3']) && $_POST['ab_accomp_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_accomp3']) && $_POST['toque_accomp3'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_accomp_3']) && $_POST['toque_accomp_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['accomp3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['accomp_3'] ?? '' }} </h6>
+				</div>
+				<div class="mealItem XXLflexCenteredXY">
+					<span
+						class="labelMeal bioAgri @if (isset($_POST['ab_accomp_4']) && $_POST['ab_accomp_4'] == 1) {{ 'display' }} 
+					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
+					<span
+						class="labelMeal HandMade @if (isset($_POST['toque_accomp_4']) && $_POST['toque_accomp_4'] == 1) {{ 'display' }} 
+					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
+					<h6 class="mb07 fcIce"> {{ $_POST['accomp_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>
@@ -206,39 +215,39 @@ $formattedDate = $formatter->format($date);
 			<div class="mealContent">
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fromage1']) && $_POST['ab_fromage1'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fromage_1']) && $_POST['ab_fromage_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['europe_fromage1']) && $_POST['europe_fromage1'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fromage_1']) && $_POST['europe_fromage_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fromage1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fromage_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fromage2']) && $_POST['ab_fromage2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fromage_2']) && $_POST['ab_fromage_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['europe_fromage2']) && $_POST['europe_fromage2'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fromage_2']) && $_POST['europe_fromage_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fromage2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fromage_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fromage3']) && $_POST['ab_fromage3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fromage_3']) && $_POST['ab_fromage_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['europe_fromage3']) && $_POST['europe_fromage3'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fromage_3']) && $_POST['europe_fromage_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fromage3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fromage_3'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY hide">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fromage4']) && $_POST['ab_fromage4'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fromage_4']) && $_POST['ab_fromage_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['europe_fromage4']) && $_POST['europe_fromage4'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fromage_4']) && $_POST['europe_fromage_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fromage4'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fromage_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>
@@ -255,51 +264,39 @@ $formattedDate = $formatter->format($date);
 			<div class="mealContent">
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_dessert1']) && $_POST['ab_dessert1'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_dessert_1']) && $_POST['ab_dessert_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_dessert1']) && $_POST['toque_dessert1'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_dessert_1']) && $_POST['toque_dessert_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<span
-						class="labelMeal Europe @if (isset($_POST['europe_dessert1']) && $_POST['europe_dessert1'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['dessert1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['dessert_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_dessert2']) && $_POST['ab_dessert2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_dessert_2']) && $_POST['ab_dessert_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_dessert2']) && $_POST['toque_dessert2'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_dessert_2']) && $_POST['toque_dessert_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<span
-						class="labelMeal Europe @if (isset($_POST['europe_dessert2']) && $_POST['europe_dessert2'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['dessert2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['dessert_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_dessert3']) && $_POST['ab_dessert3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_dessert_3']) && $_POST['ab_dessert_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_dessert3']) && $_POST['toque_dessert3'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_dessert_3']) && $_POST['toque_dessert_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<span
-						class="labelMeal Europe @if (isset($_POST['europe_dessert3']) && $_POST['europe_dessert3'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['dessert3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['dessert_3'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY hide">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_dessert4']) && $_POST['ab_dessert4'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_dessert_4']) && $_POST['ab_dessert_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal HandMade @if (isset($_POST['toque_dessert4']) && $_POST['toque_dessert4'] == 1) {{ 'display' }} 
+						class="labelMeal HandMade @if (isset($_POST['toque_dessert_4']) && $_POST['toque_dessert_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
-					<span
-						class="labelMeal Europe @if (isset($_POST['europe_dessert4']) && $_POST['europe_dessert4'] == 1) {{ 'display' }} 
-					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['dessert4'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['dessert_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>
@@ -316,39 +313,39 @@ $formattedDate = $formatter->format($date);
 			<div class="mealContent">
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fruit1']) && $_POST['ab_fruit1'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fruit_1']) && $_POST['ab_fruit_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['toque_fruit1']) && $_POST['toque_fruit1'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fruit_1']) && $_POST['europe_fruit_1'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fruit1'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fruit_1'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fruit2']) && $_POST['ab_fruit2'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fruit_2']) && $_POST['ab_fruit_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['toque_fruit2']) && $_POST['toque_fruit2'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fruit_2']) && $_POST['europe_fruit_2'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fruit2'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fruit_2'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fruit3']) && $_POST['ab_fruit3'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fruit_3']) && $_POST['ab_fruit_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['toque_fruit3']) && $_POST['toque_fruit3'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fruit_3']) && $_POST['europe_fruit_3'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fruit3'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fruit_3'] ?? '' }} </h6>
 				</div>
 				<div class="mealItem XXLflexCenteredXY">
 					<span
-						class="labelMeal bioAgri @if (isset($_POST['ab_fruit4']) && $_POST['ab_fruit4'] == 1) {{ 'display' }} 
+						class="labelMeal bioAgri @if (isset($_POST['ab_fruit_4']) && $_POST['ab_fruit_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr07"></span>
 					<span
-						class="labelMeal Europe @if (isset($_POST['toque_fruit4']) && $_POST['toque_fruit4'] == 1) {{ 'display' }} 
+						class="labelMeal Europe @if (isset($_POST['europe_fruit_4']) && $_POST['europe_fruit_4'] == 1) {{ 'display' }} 
 					@else {{ 'hide' }} @endif XXLbr50 mb1 mr05"></span>
-					<h6 class="mb07 fcIce"> {{ $_POST['fruit4'] ?? '' }} </h6>
+					<h6 class="mb07 fcIce"> {{ $_POST['fruit_4'] ?? '' }} </h6>
 				</div>
 			</div>
 		</div>

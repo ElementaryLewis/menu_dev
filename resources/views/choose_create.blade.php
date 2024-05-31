@@ -86,7 +86,7 @@ $formattedDate = $formatter->format($date);
 							<label for="date" class="mr2 XXLspan-6">
 								<h6 class="XXLmAuto XXLright">Choisir une date:</h6>
 							</label>
-							<input type="date" name="date" id="date" value="{{ old('date') }}" class="XXLspan-6" />
+							<input type="date" name="date" id="date" value="{{ old('date', date('Y-m-d')) }}" class="XXLspan-6" />
 						</div>
 						<!-- END : CHOOSE DATE -->
 						<!-- BEGINNING : CHOOSE TIME -->

@@ -62,8 +62,7 @@ $formattedDate = $formatter->format($date);
 						</div>
 						<div class="bottomUserCard pt1 pb1 XXLbrBottom20">
 							<div class="XXLflexVerticalAlign">
-								<p class="XXLmAuto pb1">Number Phone</p>
-								<p class="XXLmAuto pb1">mail Adress</p>
+								<img class="XXLmAuto pb1" src=" {{ asset('img\png\contact\contact3.png') }}">
 							</div>
 						</div>
 					</div>
@@ -85,8 +84,7 @@ $formattedDate = $formatter->format($date);
 						</div>
 						<div class="bottomUserCard pt1 pb1 XXLbrBottom20">
 							<div class="XXLflexVerticalAlign">
-								<p class="XXLmAuto pb1">Number Phone</p>
-								<p class="XXLmAuto pb1">mail Adress</p>
+								<img class="XXLmAuto pb1" src=" {{ asset('img\png\contact\contact2.png') }}">
 							</div>
 						</div>
 					</div>

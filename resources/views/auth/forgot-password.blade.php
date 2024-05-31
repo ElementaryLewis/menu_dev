@@ -44,7 +44,7 @@ $formattedDate = $formatter->format($date);
 			@if (session('status'))
 				<div id="errorMessageContainer" class="XXLflexCenteredXY XXLsCol2 XXLeCol12 XXLsLine4 XXLeLine4 pb1">
 					<p class="XXLbr20 borderBox fcEnvironnement XXLcenter p1 XXLmAuto bgWhite error-messages XXLflexCenteredXY">
-						{{ session('status') }}
+						Une demande de réinitialisation de votre mot de passe a été envoyée sur votre boîte e-mail.
 					</p>
 				</div>
 			@endif
