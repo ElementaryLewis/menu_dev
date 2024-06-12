@@ -156,8 +156,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_entree_1" name="ab_entree_1" value="1"
 											@if ($menu['ab_entree_1'] == 1 || old('ab_entree_1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_entree_1" name="toque_entree_1" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_1" name="toque_entree_1" value="1"
 											@if ($menu['toque_entree_1'] == 1 || old('toque_entree_1')) checked @endif />
 									</div>
 								</div>
@@ -175,8 +175,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_entree_2" name="ab_entree_2" value="1"
 											@if ($menu['ab_entree_2'] == 1 || old('ab_entree_2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_entree_2" name="toque_entree_2" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_2" name="toque_entree_2" value="1"
 											@if ($menu['toque_entree_2'] == 1 || old('toque_entree_2')) checked @endif />
 									</div>
 								</div>
@@ -194,8 +194,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_entree_3" name="ab_entree_3" value="1"
 											@if ($menu['ab_entree_3'] == 1 || old('ab_entree_3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_entree_3" name="toque_entree_3" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_entree_3" name="toque_entree_3" value="1"
 											@if ($menu['toque_entree_3'] == 1 || old('toque_entree_3')) checked @endif />
 									</div>
 								</div>
@@ -213,8 +213,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_entree_4" name="ab_entree_4" value="1"
 											@if ($menu['ab_entree_4'] == 1 || old('ab_entree_4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input id="toque_entree_4" name="toque_entree_4" value="1" class="iconHandMade" type="checkbox"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input id="toque_entree_4" name="toque_entree_4" value="1" class="checkboxHandMade" type="checkbox"
 											@if ($menu['toque_entree_4'] == 1 || old('toque_entree_4')) checked @endif />
 									</div>
 								</div>
@@ -248,8 +248,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_plat_1" name="ab_plat_1" value="1"
 											@if ($menu['ab_plat_1'] == 1 || old('ab_plat_1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_plat_1" name="toque_plat_1" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_1" name="toque_plat_1" value="1"
 											@if ($menu['toque_plat_1'] == 1 || old('toque_plat_1')) checked @endif />
 									</div>
 								</div>
@@ -267,8 +267,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_plat_2" name="ab_plat_2" value="1"
 											@if ($menu['ab_plat_2'] == 1 || old('ab_plat_2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_plat_2" name="toque_plat_2" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_2" name="toque_plat_2" value="1"
 											@if ($menu['toque_plat_2'] == 1 || old('toque_plat_2')) checked @endif />
 									</div>
 								</div>
@@ -286,8 +286,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_plat_3" name="ab_plat_3" value="1"
 											@if ($menu['ab_plat_3'] == 1 || old('ab_plat_3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_plat_3" name="toque_plat_3" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_3" name="toque_plat_3" value="1"
 											@if ($menu['toque_plat_3'] == 1 || old('toque_plat_3')) checked @endif />
 									</div>
 								</div>
@@ -305,8 +305,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_plat_4" name="ab_plat_4" value="1"
 											@if ($menu['ab_plat_4'] == 1 || old('ab_plat_4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_plat_4" name="toque_plat_4" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_plat_4" name="toque_plat_4" value="1"
 											@if ($menu['toque_plat_4'] == 1 || old('toque_plat_4')) checked @endif />
 									</div>
 								</div>
@@ -340,8 +340,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_accomp_1" name="ab_accomp_1" value="1"
 											@if ($menu['ab_accomp_1'] == 1 || old('ab_accomp_1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_accomp_1" name="toque_accomp_1" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_1" name="toque_accomp_1" value="1"
 											@if ($menu['toque_accomp_1'] == 1 || old('toque_accomp_1')) checked @endif />
 									</div>
 								</div>
@@ -359,8 +359,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_accomp_2" name="ab_accomp_2" value="1"
 											@if ($menu['ab_accomp_2'] == 1 || old('ab_accomp_2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_accomp_2" name="toque_accomp_2" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_2" name="toque_accomp_2" value="1"
 											@if ($menu['toque_accomp_2'] == 1 || old('toque_accomp_2')) checked @endif />
 									</div>
 								</div>
@@ -378,8 +378,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_accomp_3" name="ab_accomp_3" value="1"
 											@if ($menu['ab_accomp_3'] == 1 || old('ab_accomp_3')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_accomp_3" name="toque_accomp_3" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_3" name="toque_accomp_3" value="1"
 											@if ($menu['toque_accomp_3'] == 1 || old('toque_accomp_3')) checked @endif />
 									</div>
 								</div>
@@ -397,8 +397,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_accomp_4" name="ab_accomp_4" value="1"
 											@if ($menu['ab_accomp_4'] == 1 || old('ab_accomp_4')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_accomp_4" name="toque_accomp_4" value="1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_accomp_4" name="toque_accomp_4" value="1"
 											@if ($menu['toque_accomp_4'] == 1 || old('toque_accomp_4')) checked @endif />
 									</div>
 								</div>
@@ -524,8 +524,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_dessert_1" name="ab_dessert_1" value="1"
 											@if ($menu['ab_dessert_1'] == 1 || old('ab_dessert_1')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_dessert_1" name="toque_dessert_1"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_1" name="toque_dessert_1"
 											value="1" @if ($menu['toque_dessert_1'] == 1 || old('toque_dessert_1')) checked @endif />
 									</div>
 								</div>
@@ -543,8 +543,8 @@ $formattedDate = $formatter->format($date);
 										<span class="iconAB XXLbr50 mb1 mr07"></span>
 										<input class="checkboxAB" type="checkbox" id="ab_dessert_2" name="ab_dessert_2" value="1"
 											@if ($menu['ab_dessert_2'] == 1 || old('ab_dessert_2')) checked @endif />
-										<span class="checkboxHandMade XXLbr50 mb1 mr07"></span>
-										<input class="iconHandMade" type="checkbox" id="toque_dessert_2" name="toque_dessert_2"
+										<span class="iconHandMade XXLbr50 mb1 mr07"></span>
+										<input class="checkboxHandMade" type="checkbox" id="toque_dessert_2" name="toque_dessert_2"
 											value="1" @if ($menu['toque_dessert_2'] == 1 || old('toque_dessert_2')) checked @endif />
 									</div>
 								</div>

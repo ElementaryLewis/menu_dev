@@ -44,7 +44,10 @@ $formattedDate = $formatter->format($date);
 								Oups !<br>Il semble qu'il y ait eu une erreur !
 							</h3>
 							<h6 class="XXLcenter">
-								Nous n'arrivons pas à trouver la page que vous cherchez.<br>Vérifiez si l'URL est correcte
+								Nous n'arrivons pas à trouver la page que vous cherchez.<br>
+								<br>
+								Veuillez vous connecter en tant qu'administrateur.trice<br>
+								ou vous rapprochez-vous du service informatique pour en savoir plus.
 							</h6>
 						</div>
 					</div>
@@ -53,13 +56,13 @@ $formattedDate = $formatter->format($date);
 					<div class="sep bgIce XXLw-80 XXLmAuto"></div>
 				</div>
 				<div class="XXLspan-12 XXLsLine4 XXLeLine12 bgIce pt3 pb3 borderBox">
-					<h6 class="XXLcenter XXLw-100">Revenir à l'accueil</h6>
+					<h6 class="XXLcenter XXLw-100">Contacter un.e administrateur.trice</h6>
 					<button type="submit" class="btnContainer pb1 XXLw-70 XLw-80 Mw-90 XXLmAuto"
-						onclick="window.location.href='{{ route('index') }}';">
-						<div class="btnText bgAgricultureElevage XXLbr50">Accueil
+						onclick="window.location.href='{{ route('contacts') }}';">
+						<div class="btnText bgAgricultureElevage XXLbr50">Contacts
 						</div>
 						<div class="btnIcon fcdarkGrey XXLop0">
-							<i class=" fa-solid fa-house XXLmAuto"></i>
+							<i class="fa-solid fa-address-book"></i>
 						</div>
 					</button>
 				</div>

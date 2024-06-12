@@ -79,11 +79,6 @@ class CRUDController extends Controller
 			]);
 		}
 
-		$menu = Menu::where('date', $request['date'])
-			->where('midi_soir', $request['midi_soir'])
-			->get()
-			->toArray();
-
 		return view('visual_read', [
 			'menu' => $menu[0],
 		]);
